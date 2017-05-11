@@ -12,7 +12,7 @@ jQuery(function() {
         resize: false,
 
         // swf文件路径
-        swf: 'js/swf/Uploader.swf',
+        swf: 'js/process/swf/Uploader.swf',
 
         // 文件接收服务端。
         server: 'http://webuploader.duapp.com/server/fileupload.php',

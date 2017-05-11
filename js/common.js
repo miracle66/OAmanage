@@ -27,7 +27,7 @@
 	if($(that).attr('data-id') == 'leaveApply'){
 		var uploader = document.createElement("script");
 		uploader.type = "text/javascript";
-		uploader.src = "js/uploader.js";
+		uploader.src = "js/process/uploader.js";
 		setTimeout(function(){
 			document.getElementsByTagName('body')[0].appendChild(uploader);
 		},500)
@@ -36,10 +36,10 @@
 	var scriptArr = $('body').find("script");
 	scriptArr.each(function(i,el){
 		// console.log($(scriptArr[i]).attr('src'))
-		if($(scriptArr[i]).attr('src') == 'js/menu.js' || $(scriptArr[i]).attr('src') == 'js/tableSelect.js' || $(scriptArr[i]).attr('src') == 'js/uploader.js'){
+		if($(scriptArr[i]).attr('src') == 'js/menu.js' || $(scriptArr[i]).attr('src') == 'js/tableSelect.js' || $(scriptArr[i]).attr('src') == 'js/process/uploader.js'){
 			$("script[src='js/menu.js']").remove();
 			$("script[src='js/tableSelect.js']").remove();
-			$("script[src='js/uploader.js']").remove();
+			$("script[src='js/process/uploader.js']").remove();
 		}
 	})
 

@@ -1,0 +1,168 @@
+/*created by lily on 2017.05.10*/
+
+
+/*流程管理*/
+.apply-top{
+    line-height: 32px;
+}
+.apply-top > div > button{
+    margin: 0 0 0 10px;
+}
+.apply-top > span{
+    margin-right: 50px;
+}
+.process .process-li{
+    width: 16%;
+    display: inline-block;
+    margin: 0 4%;
+    vertical-align: top;
+}
+.process .process-li > h2{
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0;
+    border-bottom: 1px solid #ff7c34;
+}
+.process .process-li > a{
+    display: block;
+    margin: 10px 0;
+    color: #333;
+}
+.process .process-li > a > i{
+    color: #999;
+    margin-right: 5px;
+}
+
+
+.applys{
+    margin: 20px;
+}
+.h2-title{
+    font-size: 16px;
+    color: #333 !important;
+}
+.apply-container{
+    margin: 30px 0;
+}
+.apply-creater{
+    border-bottom: 1px solid #eee;
+    padding:10px 0;
+    line-height: 25px;
+    margin: 20px 0;
+}
+.apply-step{
+    margin-bottom: 20px;
+}
+.apply-step .steps {
+    display: inline-block;
+    margin: 0 30px 0 0;
+}
+.apply-step .steps > p{
+    margin: 0 0 0 45px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #999;
+}
+.apply-step .steps .notes{
+    display: inline-block;
+    color: #666;
+    margin: 0 10px 0 0;
+}
+.apply-step .steps > hr{
+    background: #ff7c34;
+    height: 1px;
+    display: inline-block;
+    width: 100px;
+    margin: 3px 0;
+}
+.apply-step .steps .notes > i{
+    vertical-align: middle;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    border: 1px solid #ff7c34;
+    line-height: 32px;
+    font-size: 18px;
+    color: #ff7c34;
+}
+.apply-step .steps .notes > i > em{
+    margin-left: 6px;
+}
+.apply-creater .tips{
+    display: inline-block;
+    width: 950px;
+}
+.apply-creater .tips,.apply-creater > span{
+    color: #f00;
+}
+.apply-creater .tips > p{
+    margin: 0;
+}
+.apply-list{
+}
+.apply-list .pane{
+    width: 395px;
+    display: inline-block;
+    margin: 10px 0;
+}
+.apply-list .pane > label{
+    display: inline-block;
+}
+.apply-list .pane.date input{
+    vertical-align: inherit !important;
+}
+.apply-list .pane input[type="text"]{
+    padding: 8px 10px;
+    vertical-align: inherit;
+}
+
+.apply-list .wu-example{
+}
+.apply-list .wu-example .btns #ctlBtn{
+    display: none;
+}
+.apply-list .wu-example .uploader-list{
+    margin: 10px;
+    padding: 10px;
+}
+.apply-list .wu-example .uploader-list .item{
+    display: inline-block;
+    margin: 0 40px 0 0;
+    position: relative;
+}
+.apply-list .wu-example .uploader-list .item .icon-link{
+    color: #999;
+}
+.apply-list .wu-example .uploader-list .item .icon-close{
+    position: absolute;
+    top: 3px;
+    right: -30px;
+    font-size: 12px;
+    color: #ff7c34;
+    cursor: pointer;
+}
+.apply-list .wu-example .uploader-list .item > h4{
+    font-weight: normal;
+    font-size: 14px;
+    display: inline-block;
+    margin-left: 5px;
+}
+.apply-list .wu-example .uploader-list .item .state{
+    color: #f00;
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+.emcircle{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    background: #99cc66;
+    color: #fff;
+    font-style: normal;
+    cursor: pointer;
+}

@@ -1,0 +1,348 @@
+<div data-id="menu9" name="menu0">
+  <div class="tree-container tree">
+    <div id="myTabContent" class="tab-content">
+      <!-- kpi指标 start-->
+      <div class="tab-pane fade in active">
+        <div class="form-list" style="margin-left: 0;">
+          <div class="title">
+            <button class="btn btn-success" data-toggle="modal" data-target="#addGrade">新增等级</button>
+            <button class="btn btn-success">删除</button>
+          </div>
+          <div class="right-container right-table select-table">
+            <div class="page">        
+              <!-- Panel Page Database Table 1 Content: -->
+              <table id="table">
+                <thead>
+                  <tr>
+                    <th><span class="input-remember fl input-noremember js-selectAll"><em>&#10003;</em><input type="checkbox" id="selectAll"></span></th>
+                    <th>等级名称</th>
+                    <th>等级定义</th>
+                    <th>等级比例</th>
+                    <th>奖励系数</th>
+                    <th>评定规则</th>
+                  </tr>
+                </thead>
+                <tbody>  
+                  <tr>
+                    <td><span class="input-remember fl input-noremember js-select"><em>&#10003;</em><input type="checkbox" name="items" value="1"></span></td>
+                    <td><a data-toggle="modal" data-target="#gradeDetail">A级</a></td>
+                    <td>KPI</td>
+                    <td>0%~10%</td>
+                    <td>1.2</td>
+                    <td>
+                      <p>【KPI】kpi总得分>=95</p>
+                      <p>【价值观】价值观总得分>=16 且责任得分>=3</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="input-remember fl input-noremember js-select"><em>&#10003;</em><input type="checkbox" name="items" value="2"></span></td>
+                    <td><a data-toggle="modal" data-target="#gradeDetail">A级</a></td>
+                    <td>KPI</td>
+                    <td>0%~10%</td>
+                    <td>1.2</td>
+                    <td>......</td>
+                  </tr>
+                  <tr>
+                    <td><span class="input-remember fl input-noremember js-select"><em>&#10003;</em><input type="checkbox" name="items" value="3"></span></td>
+                    <td><a data-toggle="modal" data-target="#gradeDetail">A级</a></td>
+                    <td>价值观</td>
+                    <td>0%~10%</td>
+                    <td>1.2</td>
+                    <td>......</td>
+                  </tr>
+                  <tr>
+                    <td><span class="input-remember fl input-noremember js-select"><em>&#10003;</em><input type="checkbox" name="items" value="4"></span></td>
+                    <td><a data-toggle="modal" data-target="#gradeDetail">A级</a></td>
+                    <td>价值观</td>
+                    <td>0%~10%</td>
+                    <td>1.2</td>
+                    <td>......</td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- /Panel Page Database Table 1 Content -->
+            </div>
+          </div>
+          <div class="page-container">
+            <ul class="pagination">
+              <li><a href="#">&lt;</a></li>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">&gt;</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- kpi指标 end -->
+    </div>
+  </div>
+  <!--新增等级-->
+  <div class="modal fade" id="addGrade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> &times; </button>
+          <h4 class="modal-title"> 新增/编辑绩效等级 </h4>
+        </div>
+        <div class="modal-body">
+          <div class="tree tree-container" style="border:none;">
+            <div class="form-list perfor-list  clearfix" style="margin-left:0; padding: 0 10px;">
+              <form role="form">
+                <div class="form-group">
+                  <label class="control-label"><em> * </em>等级名称：</label>
+                  <div class="controls">
+                    <input type="text" class="form-control" name="menu_name" placeholder="请输入等级名称">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label"><em> * </em>等级定义：</label>
+                  <div class="controls">
+                    <select class="form-control sel-value js-grade">
+                      <option>请选择</option>
+                      <option value="0">KPI</option>
+                      <option value="1">价值观</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group perfor-group">
+                  <label class="control-label"><em> * </em>等级比例：</label>
+                  <div class="controls">
+                    <input type="number" class="form-control" name="menu_name"> % - <input type="number" class="form-control" name="menu_name"> %
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label"><em> * </em>奖励系数：</label>
+                  <div class="controls">
+                    <input type="text" class="form-control" name="menu_name" placeholder="请输入等级名称">
+                  </div>
+                </div>
+                <div class="perfor-kpi js-perfor-kpi">
+                  <span class="perfor-title">
+                    KPI
+                  </span>
+                  <div class="form-group perfor-group">
+                    <label class="control-label"><em> * </em>评定规则：</label>
+                    <div class="controls rule-container">
+                      <div class="js-rule">
+                        <div class="perfor-rule">
+                          <select class="form-control sel-value">
+                            <option value="0">KPI总得分</option>
+                            <option value="1">价值观总得分</option>
+                            <option value="2">尊重得分</option>
+                            <option value="3">责任得分</option>
+                            <option value="4">品质得分</option>
+                            <option value="5">创新得分</option>
+                          </select>
+                          <select class="form-control input-sm">
+                            <option value=">="> >= </option>
+                            <option value=">"> > </option>
+                            <option value="=">=</option>
+                            <option value="<"> < </option>
+                            <option value="<="> <= </option>
+                          </select>
+                          <input type="number" class="form-control">
+                          <select class="form-control sel-add"> <option value="且"> 且 </option> <option value="或"> 或 </option> </select>
+                        </div>
+                      </div>
+                      <span class="js-change">
+                        <i class="icon-plus js-append"></i>
+                        <i class="icon-minus js-remove"></i>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label"><em> * </em>等级描述：</label>
+                    <div class="controls">
+                      <textarea name="menu_remark" cols="30" rows="5" placeholder="请输入指标定义"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="perfor-kpi">
+                  <span class="perfor-title">
+                    价值观
+                  </span>
+                  <div class="form-group perfor-group">
+                    <label class="control-label"><em> * </em>评定规则：</label>
+                    <div class="controls rule-container">
+                      <div class="js-rule">
+                        <div class="perfor-rule">
+                          <select class="form-control sel-value">
+                            <option value="1">价值观总得分</option>
+                            <option value="2">尊重得分</option>
+                            <option value="3">责任得分</option>
+                            <option value="4">品质得分</option>
+                            <option value="5">创新得分</option>
+                          </select>
+                          <select class="form-control input-sm">
+                            <option value=">="> >= </option>
+                            <option value=">"> > </option>
+                            <option value="=">=</option>
+                            <option value="<"> < </option>
+                            <option value="<="> <= </option>
+                          </select>
+                          <input type="number" class="form-control">
+                          <select class="form-control sel-add"> <option value="且"> 且 </option> <option value="或"> 或 </option> </select>
+                        </div>
+                      </div>
+                      <span class="js-change">
+                        <i class="icon-plus js-append"></i>
+                        <i class="icon-minus js-remove"></i>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label"><em> * </em>等级描述：</label>
+                    <div class="controls">
+                      <textarea name="menu_remark" cols="30" rows="5" placeholder="请输入指标定义"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" onclick="save_menu();"> 保存 </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--新增等级-->
+  <!--等级详情-->
+  <div class="modal fade" id="gradeDetail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> &times; </button>
+          <h4 class="modal-title"> 绩效等级详情 </h4>
+        </div>
+        <div class="modal-body">
+          <div class="tree tree-container" style="border:none;">
+            <div class="form-list perfor-list  clearfix" style="margin-left:0; padding: 0 10px;">
+              <form role="form">
+                <div class="form-group">
+                  <label class="control-label"><em> * </em>等级名称：</label>
+                  <div class="controls">
+                    <input type="text" class="form-control" name="menu_name" placeholder="请输入等级名称">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label"><em> * </em>等级定义：</label>
+                  <div class="controls">
+                    <select class="form-control sel-value js-grade">
+                      <option>请选择</option>
+                      <option value="0">KPI</option>
+                      <option value="1">价值观</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group perfor-group">
+                  <label class="control-label"><em> * </em>等级比例：</label>
+                  <div class="controls">
+                    <input type="number" class="form-control" name="menu_name"> % - <input type="number" class="form-control" name="menu_name"> %
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label"><em> * </em>奖励系数：</label>
+                  <div class="controls">
+                    <input type="text" class="form-control" name="menu_name" placeholder="请输入等级名称">
+                  </div>
+                </div>
+                <div class="perfor-kpi js-perfor-kpi">
+                  <span class="perfor-title">
+                    KPI
+                  </span>
+                  <div class="form-group perfor-group">
+                    <label class="control-label"><em> * </em>评定规则：</label>
+                    <div class="controls rule-container">
+                      <div class="js-rule">
+                        <div class="perfor-rule">
+                          <select class="form-control sel-value">
+                            <option value="0">KPI总得分</option>
+                            <option value="1">价值观总得分</option>
+                            <option value="2">尊重得分</option>
+                            <option value="3">责任得分</option>
+                            <option value="4">品质得分</option>
+                            <option value="5">创新得分</option>
+                          </select>
+                          <select class="form-control input-sm">
+                            <option value=">="> >= </option>
+                            <option value=">"> > </option>
+                            <option value="=">=</option>
+                            <option value="<"> < </option>
+                            <option value="<="> <= </option>
+                          </select>
+                          <input type="number" class="form-control">
+                          <select class="form-control sel-add"> <option value="且"> 且 </option> <option value="或"> 或 </option> </select>
+                        </div>
+                      </div>
+                      <span class="js-change">
+                        <i class="icon-plus js-append"></i>
+                        <i class="icon-minus js-remove"></i>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label"><em> * </em>等级描述：</label>
+                    <div class="controls">
+                      <textarea name="menu_remark" cols="30" rows="5" placeholder="请输入指标定义"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="perfor-kpi">
+                  <span class="perfor-title">
+                    价值观
+                  </span>
+                  <div class="form-group perfor-group">
+                    <label class="control-label"><em> * </em>评定规则：</label>
+                    <div class="controls rule-container">
+                      <div class="js-rule">
+                        <div class="perfor-rule">
+                          <select class="form-control sel-value">
+                            <option value="0">KPI总得分</option>
+                            <option value="1">价值观总得分</option>
+                            <option value="2">尊重得分</option>
+                            <option value="3">责任得分</option>
+                            <option value="4">品质得分</option>
+                            <option value="5">创新得分</option>
+                          </select>
+                          <select class="form-control input-sm">
+                            <option value=">="> >= </option>
+                            <option value=">"> > </option>
+                            <option value="=">=</option>
+                            <option value="<"> < </option>
+                            <option value="<="> <= </option>
+                          </select>
+                          <input type="number" class="form-control">
+                          <select class="form-control sel-add"> <option value="且"> 且 </option> <option value="或"> 或 </option> </select>
+                        </div>
+                      </div>
+                      <span class="js-change">
+                        <i class="icon-plus js-append"></i>
+                        <i class="icon-minus js-remove"></i>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label"><em> * </em>等级描述：</label>
+                    <div class="controls">
+                      <textarea name="menu_remark" cols="30" rows="5" placeholder="请输入指标定义"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" onclick="save_menu();"> 保存 </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--等级详情-->
+</div>
+</div>

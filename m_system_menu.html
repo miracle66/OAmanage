@@ -1,0 +1,296 @@
+<div data-id="menu1" name="menu0">
+  <div class="tree well tree-container form-pane clearfix">
+    <div class="tree-list">
+      <ul class="all-list">
+        <div class="title">菜单目录</div>
+        <div class="search-mini-wrapper">
+          <form action="#" class="search-mini">
+            <input name="search" type="text" placeholder="Search...">
+            <button type="submit">
+              <i class="icon-search"></i>
+            </button>
+          </form>
+        </div>
+        <li>
+          <span class="js-fcolor"><i class="icon-folder-close"></i>系统管理</span>
+          <span class="menu-icon"><i class="icon-close js-delete" data-toggle="modal" data-target="#deleteMenu">×</i></span>
+          <ul>
+            <li>
+              <span class="js-fcolor"><i class="icon-file"></i>菜单管理 </span>
+              <span class="menu-icon"><!-- <i class="icon-arrow-up"></i><i class="icon-arrow-down"></i> --><i class="icon-close js-delete" data-toggle="modal" data-target="#deleteMenu">×</i></span>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <span class="js-fcolor"><i class="icon-folder-close"></i>人事管理</span>
+          <span class="menu-icon"><i class="icon-close js-delete" data-toggle="modal" data-target="#deleteMenu">×</i></span>
+          <ul multiple name="right" size="8">
+            <li>
+              <span class="js-fcolor"><i class="icon-file"></i>部门管理 </span>
+              <span class="menu-icon"><!-- <i class="icon-arrow-up"></i><i class="icon-arrow-down"></i> --><i class="icon-close js-delete" data-toggle="modal" data-target="#deleteMenu">×</i></span>
+            </li>
+            <li>
+              <span class="js-fcolor"><i class="icon-file"></i>岗位管理 </span>
+              <span class="menu-icon"><!-- <i class="icon-arrow-up" onclick="moveUp(document.getElementById('right'));"></i><i class="icon-arrow-down"></i> --><i class="icon-close js-delete" data-toggle="modal" data-target="#deleteMenu">×</i></span>
+            </li>
+            <li>
+              <span class="js-fcolor"><i class="icon-file"></i>角色管理 </span>
+              <span class="menu-icon"><!-- <i class="icon-arrow-up"></i><i class="icon-arrow-down"></i> --><i class="icon-close js-delete" data-toggle="modal" data-target="#deleteMenu">×</i></span>
+            </li>
+            <li>
+              <span class="js-fcolor"><i class="icon-file"></i>员工管理 </span>
+              <span class="menu-icon"><!-- <i class="icon-arrow-up"></i><i class="icon-arrow-down"></i> --><i class="icon-close js-delete" data-toggle="modal" data-target="#deleteMenu">×</i></span>
+            </li>
+            <li>
+              <span class="js-fcolor"><i class="icon-file"></i>指标管理 </span>
+              <span class="menu-icon"><!-- <i class="icon-arrow-up"></i><i class="icon-arrow-down"></i> --><i class="icon-close js-delete" data-toggle="modal" data-target="#deleteMenu">×</i></span>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <span class="js-fcolor"><i class="icon-folder-close"></i>个人管理</span>
+          <span class="menu-icon"><i class="icon-close js-delete" data-toggle="modal" data-target="#deleteMenu">×</i></span>
+          <ul>
+            <li>
+              <span class="js-fcolor"><i class="icon-file"></i>修改密码 </span>
+              <span class="menu-icon"><!-- <i class="icon-arrow-up"></i><i class="icon-arrow-down"></i> --><i class="icon-close js-delete" data-toggle="modal" data-target="#deleteMenu">×</i></span>
+            </li>
+            <li>
+              <span class="js-fcolor"><i class="icon-file"></i>个人档案 </span>
+              <span class="menu-icon"><!-- <i class="icon-arrow-up"></i><i class="icon-arrow-down"></i> --><i class="icon-close js-delete" data-toggle="modal" data-target="#deleteMenu">×</i></span>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="form-list clearfix">
+      <div class="title"><button class="btn btn-success" data-toggle="modal" data-target="#addMenu">新增菜单</button></div>
+      <div class="right-container">
+        <form role="form">
+          <div class="form-group">
+            <label class="control-label"><em> * </em>菜单名称：</label>
+            <div class="controls">
+              <input type="text" class="form-control" placeholder="请输入菜单名称">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label"><em> * </em>上级菜单：</label>
+            <div class="controls">
+                  <button type="button" class="btn btn-default js-btn-select">
+                    <span>请选择</span>
+                    <i class="icon-plus fr js-selelct"></i>
+                  </button>
+                  <div class="tree-container list-select clearfix">
+                    <div class="tree-list">
+                      <ul>
+                        <li><input type="search" class="search-list"><i class="icon-search"></i></li>
+                        <li>
+                          <span class="js-fcolor"><i class="icon-folder-close"></i>系统管理</span>
+                          <ul>
+                            <li>
+                              <span class="js-fcolor"><i class="icon-file"></i>菜单管理 </span>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <span class="js-fcolor"><i class="icon-folder-close"></i>人事管理</span>
+                          <ul multiple name="right" size="8">
+                            <li>
+                              <span class="js-fcolor"><i class="icon-file"></i>部门管理 </span>
+                            </li>
+                            <li>
+                              <span class="js-fcolor"><i class="icon-file"></i>岗位管理 </span>
+                            </li>
+                            <li>
+                              <span class="js-fcolor"><i class="icon-file"></i>角色管理 </span>
+                            </li>
+                            <li>
+                              <span class="js-fcolor"><i class="icon-file"></i>员工管理 </span>
+                            </li>
+                            <li>
+                              <span class="js-fcolor"><i class="icon-file"></i>指标管理 </span>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <span class="js-fcolor"><i class="icon-folder-close"></i>个人管理</span>
+                          <ul>
+                            <li>
+                              <span class="js-fcolor"><i class="icon-file"></i>修改密码 </span>
+                            </li>
+                            <li>
+                              <span class="js-fcolor"><i class="icon-file"></i>个人档案 </span>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+            <!-- <div class="controls">
+             <select class="form-control input-sm" name="parent_menu">
+              <option value="sysmanage">系统管理</option>
+              <option value="permanage">人事管理</option>
+              <option value="usermanage">个人管理</option>
+            </select>
+          </div> -->
+        </div>
+        <div class="form-group">
+          <label class="control-label"><em> * </em>菜单编码：</label>
+          <div class="controls">
+            <input type="text" class="form-control" placeholder="请输入菜单编码">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label">访问地址：</label>
+          <div class="controls">
+            <input type="text" class="form-control" placeholder="请输入访问地址">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label">是否有效：</label>
+          <div class="controls">
+           <select class="form-control input-sm" name="menu_true">
+            <option value="1">是</option>
+            <option value="0">否</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label">备注：</label>
+        <div class="controls">
+          <textarea name="menu_remark" cols="30" rows="5" placeholder="管理员工基本信息和状态"></textarea>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label" for="creater">创建者：</label>
+        <div class="controls">
+          <label>liuli 2016-10-20 12:00</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label" for="updater ">修改者：</label>
+        <div class="controls">
+          <label>liuli 2016-10-20 13:00</label>
+        </div>
+      </div>
+      <footer>
+        <div class="footer">
+          <button type="submit" class="btn btn-sm btn-primary w90">保存</button>
+        </div>
+      </footer>
+    </form>
+  </div>
+  </div>
+  </div>
+  <!--新增菜单-->
+  <div class="modal fade" id="addMenu" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
+    <div class="modal-dialog"> 
+      <div class="modal-content"> 
+        <div class="modal-header"> 
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> &times; </button> 
+          <h4 class="modal-title" id="myModalLabel"> 新增菜单 </h4> 
+        </div> 
+        <div class="modal-body">
+          <div class="tree tree-container" style="border:none;">
+            <div class="form-list clearfix" style="margin-left: 10%;">
+              <form role="form">
+                <div class="form-group">
+                  <label class="control-label">上级菜单：</label>
+                  <div class="controls">
+                    <button type="button" class="btn btn-default js-btn-select">
+                      <span>请选择</span>
+                      <i class="icon-plus fr js-selelct"></i>
+                    </button>
+                    <div class="tree-container list-select clearfix">
+                      <div class="tree-list">
+                        <ul>
+                          <li>
+                            <span class="js-fcolor"><i class="icon-folder-close"></i>系统管理</span>
+                            <ul>
+                              <li>
+                                <span class="js-fcolor"><i class="icon-file"></i>菜单管理 </span>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <span class="js-fcolor"><i class="icon-folder-close"></i>人事管理</span>
+                            <ul multiple name="right" size="8">
+                              <li>
+                                <span class="js-fcolor"><i class="icon-file"></i>部门管理 </span>
+                              </li>
+                              <li>
+                                <span class="js-fcolor"><i class="icon-file"></i>岗位管理 </span>
+                              </li>
+                              <li>
+                                <span class="js-fcolor"><i class="icon-file"></i>角色管理 </span>
+                              </li>
+                              <li>
+                                <span class="js-fcolor"><i class="icon-file"></i>员工管理 </span>
+                              </li>
+                              <li>
+                                <span class="js-fcolor"><i class="icon-file"></i>指标管理 </span>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <span class="js-fcolor"><i class="icon-folder-close"></i>个人管理</span>
+                            <ul>
+                              <li>
+                                <span class="js-fcolor"><i class="icon-file"></i>修改密码 </span>
+                              </li>
+                              <li>
+                                <span class="js-fcolor"><i class="icon-file"></i>个人档案 </span>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+               </div>
+               <div class="form-group">
+                <label class="control-label"><em> * </em>菜单名称：</label>
+                <div class="controls">
+                  <input type="text" class="form-control" name="menu_name" placeholder="请输入菜单名称">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label"><em> * </em>菜单编码：</label>
+                <div class="controls">
+                  <input type="text" class="form-control" placeholder="请输入菜单编码">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label">访问地址：</label>
+                <div class="controls">
+                  <input type="text" class="form-control" placeholder="请输入访问地址">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label">是否有效：</label>
+                <div class="controls">
+                 <select class="form-control input-sm" name="menu_true">
+                  <option value="1">是</option>
+                  <option value="0">否</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="menu_remark">备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注：</label>
+              <div class="controls">
+                <textarea name="menu_remark" id="menu_remark" cols="30" rows="5" placeholder="管理员工基本信息和状态"></textarea>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div> 
+    <div class="modal-footer"> 
+      <button type="button" class="btn btn-primary" onclick="save_menu();"> 保存 </button> 
+    </div> 
+  </div> 
+  </div> 
+  </div>
+</div>

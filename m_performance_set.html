@@ -1,0 +1,431 @@
+<div data-id="menu17" name="menu0">
+  <div class="tree-container tree">
+      <div id="myTabContent" class="tab-content">
+        <!-- kpi指标 start-->
+        <div class="tab-pane fade in active">
+          <div class="form-list" style="margin-left: 0;">
+          <div class="title"><button class="btn btn-success" data-toggle="modal" data-target="#processAdd">新增流程</button></div>
+            <div class="title" style="height: 32px; line-height: 32px;">
+              <input class="chk" type="checkbox"> 显示已启用流程
+              <div class="right-search fr">
+                <div class="form-group">
+                  <div class="controls">
+                    <input type="text" name="search" placeholder="搜索"><i class="icon-search"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="right-container right-table">
+              <div class="page companyPerformance" style="display: block;">
+                <table>
+                  <thead>
+                  <tr>
+                    <th>流程名称</th>
+                    <th>是否启用</th>
+                    <th>创建时间</th>
+                    <th>操作</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td><a data-toggle="modal" data-target="#processState">绩效考核审批流程</a></td>
+                    <td>是</td>
+                    <td>2016-10-01</td>
+                    <td><span><a data-toggle="modal" data-target="#processAdd">编辑</a> | <a data-toggle="modal" data-target="#processDelete">删除</a></td>
+                  </tr>
+                  <tr>
+                    <td><a data-toggle="modal" data-target="#processState">绩效考核审批流程</a></td>
+                    <td>是</td>
+                    <td>2016-10-01</td>
+                    <td><span><a data-toggle="modal" data-target="#processAdd">编辑</a> | <a data-toggle="modal" data-target="#processDelete">删除</a></td>
+                  </tr>
+                  <tr>
+                    <td><a data-toggle="modal" data-target="#processState">绩效考核审批流程</a></td>
+                    <td>是</td>
+                    <td>2016-10-01</td>
+                    <td><span><a data-toggle="modal" data-target="#processAdd">编辑</a> | <a data-toggle="modal" data-target="#processDelete">删除</a></td>
+                  </tr>
+                  <tr>
+                    <td><a data-toggle="modal" data-target="#processState">绩效考核审批流程</a></td>
+                    <td>是</td>
+                    <td>2016-10-01</td>
+                    <td><span><a data-toggle="modal" data-target="#processAdd">编辑</a> | <a data-toggle="modal" data-target="#processDelete">删除</a></td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="page-container">
+              <ul class="pagination">
+                <li><a href="#">&lt;</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">&gt;</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- kpi指标 end -->
+      </div>
+    <!-- 流程动态 start-->
+    <div class="modal fade" id="processState" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> &times; </button>
+            <h4 class="modal-title"> 审核绩效合约表 </h4>
+          </div>
+          <div class="modal-body">
+            <div class="tree tree-container" style="border:none;">
+              <div class="form-list list-add clearfix" style="margin-left:0; padding: 0 10px;">
+                <form role="form">
+                  <div class="form-group">
+                    <label class="control-label">已选择流程：</label>
+                    <div class="controls">
+                      <select disabled="true" style="width: 300px;">
+                        <option>绩效考核审批流程</option>
+                      </select>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="employee">
+              <div class="selected-title">绩效合约审核</div>
+              <div class="selected-employee">
+                <div class="step"><span><i class="icon-user"></i>张三</span><i class="icon-arrow-right"></i></div>
+                <div class="step"><span><i class="icon-user"></i>张三</span><i class="icon-arrow-right"></i></div>
+                <div class="step"><span><i class="icon-user"></i>张三</span><i class="icon-arrow-right"></i></div>
+                <div class="step"><span><i class="icon-user"></i>张三</span><i class="icon-arrow-right"></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary"> 保存 </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 流程动态 end -->
+
+    <!-- 添加流程 start-->
+    <div class="modal fade" id="processAdd" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> &times; </button>
+            <h4 class="modal-title"> 添加流程 </h4>
+          </div>
+          <div class="modal-body">
+            <div class="form-list list-add" style="margin-left:0; padding: 0 10px;">
+              <form role="form">
+                <div class="form-group">
+                  <label class="control-label">流程名称：</label>
+                  <div class="controls">
+                    <input type="text" placeholder="请填写流程名称">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label">流程类型：</label>
+                  <div class="controls">
+                    <select style="width: 300px;">
+                      <option>绩效考核</option>
+                      <option>人事管理</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label">已选择流程：</label>
+                  <div class="controls">
+                    <select style="width: 300px;">
+                      <option>绩效考核审批流程</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="employee" style="margin-top: 10px;">
+                  <div class="selected-title">流程设置</div>
+                  <div class="selected-employee">
+                    <div class="step"><span><i class="icon-user"></i>张三</span><i class="icon-arrow-right"></i></div>
+                    <div class="step"><span><i class="icon-user"></i>张三</span><i class="icon-arrow-right"></i></div>
+                    <div class="step"><span><i class="icon-user"></i>张三</span><i class="icon-arrow-right"></i></div>
+                    <div class="step"><span><i class="icon-user"></i>张三</span><i class="icon-arrow-right"></i></div>
+                    <i class="icon-plus js-addNode"></i>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label">是否启用：</label>
+                  <div class="controls">
+                    <select style="width: 300px;">
+                      <option>请选择</option>
+                      <option>是</option>
+                      <option>否</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label">流程使用者：</label>
+                  <div class="controls">
+                    <textarea cols="30" rows="4"></textarea>
+                    <span class="fr span-btn">
+                      <a class="btn btn-success js-addRole">添加</a>
+                      <a class="btn btn-success" data-toggle="modal" data-target="#addRole">编辑</a>
+                    </span>
+                  </div>
+                </div>
+            </form>
+          </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary"> 保存 </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 添加流程 end -->
+
+    <!--添加节点 start-->
+    <div class="modal fade" id="addNode" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> &times; </button>
+            <h4 class="modal-title"> 添加节点 </h4>
+          </div>
+          <div class="modal-body">
+            <div class="form-list list-add" style="margin-left:0; padding: 0 10px;">
+              <form role="form">
+                <div class="form-group">
+                  <label class="control-label">节点名称：</label>
+                  <div class="controls">
+                    <input type="text" placeholder="请填写节点名称">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label">是否允许编辑：</label>
+                  <div class="controls">
+                    <select style="width: 300px;">
+                      <option>是</option>
+                      <option>否</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label">节点属性：</label>
+                  <div class="controls">
+                    <select style="width: 300px;">
+                      <option>绩效考核审批流程</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label">审核人/组：</label>
+                  <div class="controls">
+                    <textarea cols="30" rows="4"></textarea>
+                    <span class="fr span-btn">
+                      <a class="btn btn-success js-addRole">添加</a>
+                      <a class="btn btn-success" data-toggle="modal" data-target="#addRole">编辑</a>
+                    </span>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary"> 保存 </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--添加节点 end-->
+
+    <!-- 新增/编辑流程 start-->
+    <!--<div class="modal fade" id="processEdit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">-->
+      <!--<div class="modal-dialog">-->
+        <!--<div class="modal-content">-->
+          <!--<div class="modal-header">-->
+            <!--<button type="button" class="close" data-dismiss="modal" aria-hidden="true"> &times; </button>-->
+            <!--<h4 class="modal-title"> 新增/编辑流程 </h4>-->
+          <!--</div>-->
+          <!--<div class="modal-body">-->
+            <!--<div class="tree tree-container" style="border:none;">-->
+              <!--<div class="form-list list-add clearfix" style="margin-left:0; padding: 0 10px;">-->
+                <!--<form role="form">-->
+                  <!--<div class="form-group">-->
+                    <!--<label class="control-label">已选择流程：</label>-->
+                    <!--<div class="controls">-->
+                      <!--<select disabled="true" style="width: 300px;">-->
+                        <!--<option>绩效考核审批流程</option>-->
+                      <!--</select>-->
+                    <!--</div>-->
+                  <!--</div>-->
+                <!--</form>-->
+              <!--</div>-->
+            <!--</div>-->
+            <!--<div class="employee">-->
+              <!--<div class="selected-title">绩效合约审核</div>-->
+              <!--<div class="selected-employee">-->
+                <!--<div class="step"><span><i class="icon-user"></i>张三</span><i class="icon-arrow-right"></i></div>-->
+                <!--<div class="step"><span><i class="icon-user"></i>张三</span><i class="icon-arrow-right"></i></div>-->
+                <!--<div class="step"><span><i class="icon-user"></i>张三</span><i class="icon-arrow-right"></i></div>-->
+                <!--<div class="step"><span><i class="icon-user"></i>张三</span><i class="icon-arrow-right"></i></div>-->
+              <!--</div>-->
+            <!--</div>-->
+          <!--</div>-->
+          <!--<div class="modal-footer">-->
+            <!--<button type="button" class="btn btn-primary"> 保存 </button>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+    <!-- 新增/编辑流程 end -->
+
+    <!-- 新增角色 start-->
+    <div class="modal fade modal-select" id="addRole" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close js-close"> &times; </button>
+            <h4 class="modal-title"> 选择人员 </h4>
+          </div>
+          <div class="modal-body" style="max-height: inherit; padding: 0;">
+            <div class="tree-list">
+              <div class="search-input">
+                <input type="search" class="search-list" placeholder="搜索"><i class="icon-search"></i>
+              </div>
+              <ul class="select-ul">
+                <li>
+              <span class="js-fcolor"><i class="icon-folder-open"></i>总裁办<div class="radio radio-inline fr"><i class="icon-circle-blank"></i></div>
+              </span>
+                  <ul>
+                    <li>
+                  <span class="js-fcolor"><i class="icon-file"></i>啦啦啦
+                    <div class="radio radio-inline fr">
+                      <i class="icon-circle-blank"></i>
+                    </div>
+                  </span>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+              <span class="js-fcolor"><i class="icon-folder-open"></i>最佳东方
+                <div class="radio radio-inline fr">
+                  <i class="icon-circle-blank"></i>
+                </div>
+              </span>
+                  <ul multiple name="right" size="8">
+                    <li>
+                  <span class="js-fcolor"><i class="icon-folder-open"></i>运营部
+                    <div class="radio radio-inline fr">
+                     <i class="icon-circle-blank"></i>
+                   </div>
+                 </span>
+                      <ul>
+                        <li>
+                    <span class="js-fcolor"><i class="icon-folder-open"></i>运营中心
+                      <div class="radio radio-inline fr">
+                        <i class="icon-circle-blank"></i>
+                      </div>
+                    </span>
+                          <ul>
+                            <li>
+                        <span class="js-fcolor"><i class="icon-file"></i>哈哈哈
+                          <div class="radio radio-inline fr">
+                            <i class="icon-circle-blank"></i>
+                          </div>
+                        </span>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                <span class="js-fcolor"><i class="icon-file"></i>222
+                  <div class="radio radio-inline fr">
+                    <i class="icon-circle-blank"></i>
+                  </div>
+                </span>
+                    </li>
+                    <li>
+                <span class="js-fcolor"><i class="icon-file"></i>333
+                  <div class="radio radio-inline fr">
+                    <i class="icon-circle-blank"></i>
+                  </div>
+                </span>
+                    </li>
+                    <li>
+                <span class="js-fcolor"><i class="icon-file"></i>444
+                  <div class="radio radio-inline fr">
+                    <i class="icon-circle-blank"></i>
+                  </div>
+                </span>
+                    </li>
+                    <li>
+                <span class="js-fcolor"><i class="icon-file"></i>555
+                  <div class="radio radio-inline fr">
+                    <i class="icon-circle-blank"></i>
+                  </div>
+                </span>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+            <span class="js-fcolor"><i class="icon-folder-open"></i>迈点
+              <div class="radio radio-inline fr">
+                <i class="icon-circle-blank"></i>
+              </div>
+            </span>
+                  <ul>
+                    <li>
+                <span class="js-fcolor"><i class="icon-file"></i>4444
+                  <div class="radio radio-inline fr">
+                    <i class="icon-circle-blank"></i>
+                  </div>
+                </span>
+                    </li>
+                    <li>
+                <span class="js-fcolor"><i class="icon-file"></i>5555
+                  <div class="radio radio-inline fr">
+                    <i class="icon-circle-blank"></i>
+                  </div>
+                </span>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="right-selected">
+              <p>已选择人员数：0</p>
+              <div class="selected-bg">
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary"> 保存 </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 新增角色 end -->
+    </div>
+  </div>
+</div>
+
+<script>
+//  添加节点时 添加流程modal 关闭
+  $('.js-addNode').on('click',function () {
+    $('#processAdd').modal('hide');
+    $('#addNode').modal('show');
+  })
+//  添加人员时 添加节点、添加流程modal 关闭
+  $('.js-addRole').on('click',function () {
+    $('#processAdd').modal('hide');
+    $('#addNode').modal('hide');
+  })
+//关闭人员modal时 添加流程modal 关闭
+  $('.js-close').on('click',function () {
+    $('#addNode').modal('hide');
+  })
+</script>

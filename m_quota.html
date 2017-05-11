@@ -1,0 +1,357 @@
+<div data-id="menu8" name="menu0">
+  <div class="tree-container tree">
+      <div id="myTabContent" class="tab-content">
+        <!-- kpi指标 start-->
+        <div class="tab-pane fade in active" id="kpiQuota">
+          <div class="form-list" style="margin-left: 0;">
+            <div class="title">
+              <button class="btn btn-success" data-toggle="modal" data-target="#addQuota">新增指标</button>
+              <button class="btn btn-success">删除</button>
+              <div class="right-search fr">
+                 <div class="form-group position">
+                      <div class="controls">
+                        <select class="form-control input-sm" name="positionCate" id="positionCate">
+                            <option value="0">不限类型</option>
+                            <option value="1">定量指标</option>
+                            <option value="2">定性指标</option>
+                            <option value="3">基础指标</option>
+                        </select>
+                        <input type="text" name="search" placeholder="搜索指标名称"><i class="icon-search"></i>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="right-container right-table select-table">
+              <div class="page">        
+                <!-- Panel Page Database Table 1 Content: -->
+                  <table>
+                    <thead>
+                      <tr>
+                        <th><input type="checkbox" id="selectAll"></th>
+                        <th>指标名称</th>
+                        <th>指标类型</th>
+                        <th>指标定义</th>
+                        <th>信息提供者</th>
+                        <th>计算方法</th>
+                      </tr>
+                    </thead>
+                    <tbody>  
+                      <tr>
+                        <td><input type="checkbox"></td>
+                        <td><a data-toggle="modal" data-target="#quotaetail">业绩通过率</a></td>
+                        <td>定量</td>
+                        <td>业绩完成率为考核周期内业绩总金额与计划指标值的比率</td>
+                        <td>运营主管（张三）</td>
+                        <td>按比例</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox"></td>
+                        <td><a data-toggle="modal" data-target="#quotaetail">年会筹备情况</a></td>
+                        <td>定性</td>
+                        <td>年会方案在规定时间内经CEO签批通过...</td>
+                        <td>运营主管（张三）</td>
+                        <td>按区间</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox"></td>
+                        <td><a data-toggle="modal" data-target="#quotaetail">年会筹备情况</a></td>
+                        <td>定性</td>
+                        <td>年会方案在规定时间内经CEO签批通过...</td>
+                        <td>运营主管（张三）</td>
+                        <td>按定性</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox"></td>
+                        <td><a data-toggle="modal" data-target="#quotaetail">年会筹备情况</a></td>
+                        <td>定性</td>
+                        <td>年会方案在规定时间内经CEO签批通过...</td>
+                        <td>运营主管（张三）</td>
+                        <td>加减法</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                <!-- /Panel Page Database Table 1 Content -->
+              </div>
+            </div>
+            <div class="page-container">
+              <ul class="pagination">
+                <li><a href="#">&lt;</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">&gt;</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- kpi指标 end -->
+      </div>
+    </div>
+    <!--新增指标-->
+    <div class="modal fade" id="addQuota" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> &times; </button>
+            <h4 class="modal-title"> 新增指标 </h4>
+          </div>
+          <div class="modal-body">
+            <div class="tree tree-container" style="border:none;">
+              <div class="form-list clearfix" style="margin-left: 10%;">
+                <form role="form">
+                  <div class="form-group">
+                    <label class="control-label"><em> * </em>指标类型：</label>
+                    <div class="controls">
+                      <select class="form-control input-sm" name="menu_true">
+                        <option>请选择</option>
+                        <option value="0">定量指标</option>
+                        <option value="1">定性指标</option>
+                        <option value="2">基础指标</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label"><em> * </em>指标名称：</label>
+                    <div class="controls">
+                      <input type="text" class="form-control" name="menu_name" placeholder="请输入指标名称">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label" for="menu_remark"><em> * </em>指标定义：</label>
+                    <div class="controls">
+                      <textarea name="menu_remark" id="menu_remark" cols="30" rows="5" placeholder="请输入指标定义"></textarea>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">计量单位：</label>
+                    <div class="controls">
+                      <select class="form-control input-sm" name="menu_true">
+                        <option>请选择</option>
+                        <option value="0">万pv</option>
+                        <option value="1">篇</option>
+                        <option value="2">万元</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label"><em> * </em>计分方法：</label>
+                    <div class="controls">
+                      <select class="form-control input-sm" name="menu_true">
+                        <option>请选择</option>
+                        <option value="0">比例法</option>
+                        <option value="1">区间法</option>
+                        <option value="2">定性法</option>
+                        <option value="3">加减法</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label"><em> * </em>信息来源：</label>
+                    <div class="controls">
+                      <input type="text" class="form-control" placeholder="请输入信息来源">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label"><em> * </em>信息提供者：</label>
+                    <div class="controls">
+                      <input type="text" class="form-control" placeholder="请输入信息提供者">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label" for="menu_remark"><em> * </em>指标内容：</label>
+                    <div class="controls">
+                      <textarea name="menu_remark" id="quota_content" cols="30" rows="5" placeholder="请输入指标内容"></textarea>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" onclick="save_menu();"> 保存 </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--新增指标-->
+    <!--指标详情-->
+  <div class="modal fade" id="quotaetail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> &times; </button>
+          <h4 class="modal-title"> 指标详情 </h4>
+        </div>
+        <div class="modal-body">
+          <div class="tree tree-container" style="border:none;">
+            <div class="form-list clearfix" style="margin-left: 0;">
+              <form role="form">
+                <div class="form-group">
+                  <label class="control-label"><em> * </em>指标类型：</label>
+                  <div class="controls">
+                    <select class="form-control input-sm" name="menu_true">
+                      <option value="0">定量指标</option>
+                      <option value="1">定性指标</option>
+                      <option value="2">基础指标</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label"><em> * </em>指标名称：</label>
+                  <div class="controls">
+                    <input type="text" class="form-control" name="menu_name" placeholder="请输入指标名称" value="流量完成量">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label" for="menu_remark"><em> * </em>指标定义：</label>
+                  <div class="controls">
+                    <textarea name="menu_remark" cols="30" rows="5" placeholder="请输入指标定义">考核周期内季度新发现频道流量统计额</textarea>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label">计量单位：</label>
+                  <div class="controls">
+                    <select class="form-control input-sm" name="menu_true">
+                      <option value="0">万pv</option>
+                      <option value="1">篇</option>
+                      <option value="2">万元</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label"><em> * </em>计分方法：</label>
+                  <div class="controls js-score">
+                    <select class="form-control input-sm" name="menu_true">
+                      <option value="比例法">比例法</option>
+                      <option value="区间法">区间法</option>
+                      <option value="定性法">定性法</option>
+                      <option value="加减分法">加减分法</option>
+                    </select>
+                    <!--比例法 start-->
+                    <div class="score scale">
+                      <p>指标得分=（实际值/指标值）* 100% * 权重</p>
+                      <p><input type="number" value="0">*权重
+                          <select>
+                            <option value="0"> >= </option>
+                            <option value="1"> > </option>
+                            <option value="2"> = </option>
+                            <option value="3"> <= </option>
+                            <option value="4"> < </option>
+                          </select>
+                          指标得分
+                          <select>
+                            <option value="0"> >= </option>
+                            <option value="1"> > </option>
+                            <option value="2"> = </option>
+                            <option value="3"> <= </option>
+                            <option value="4"> < </option>
+                          </select>
+                          <input type="number" value="1">*权重
+                      </p>
+                    </div>
+                    <!--比例法 end-->
+                    <!--区间法 start-->
+                    <div class="score interval">
+                      <div class="js-interval">
+                        <p>若实际值
+                          <select>
+                            <option value="0"> >= </option>
+                            <option value="1"> > </option>
+                            <option value="2"> = </option>
+                            <option value="3"> <= </option>
+                            <option value="4"> < </option>
+                          </select>
+                          <input type="number" value="0">
+                          *目标值，指标得分=<input type="number" value="1">*权重
+                        </p>
+                      </div>
+                      <span class="js-change">
+                        <i class="icon-plus js-append"></i>
+                        <i class="icon-minus js-remove"></i>
+                      </span>
+                    </div>
+                    <!--区间法 end-->
+                    <!--定性法 start-->
+                    <div class="score quality">
+                      <div class="js-quality">
+                        <p>
+                          若实际值为<input class="ipt-txt" type="text" value="非常满意">，指标得分=<input class="ipt-number" type="number" value="1">*权重
+                        </p>
+                        <p>
+                          若实际值为<input class="ipt-txt" type="text" value="满意">，指标得分=<input class="ipt-number" type="number" value="0.8">*权重
+                        </p>
+                        <p>
+                          若实际值为<input class="ipt-txt" type="text" value="一般">，指标得分=<input class="ipt-number" type="number" value="0.6">*权重
+                        </p>
+                        <p>
+                          若实际值为<input class="ipt-txt" type="text" value="需改进">，指标得分=<input class="ipt-number" type="number" value="0.5">*权重
+                        </p>
+                        <p>
+                          若实际值为<input class="ipt-txt" type="text" value="不合格">，指标得分=<input class="ipt-number" type="number" value="0">*权重
+                        </p>
+                      </div>
+
+                      <span class="js-change">
+                        <i class="icon-plus js-append"></i>
+                        <i class="icon-minus js-remove"></i>
+                      </span>
+                    </div>
+                    <!--定性法 end-->
+                    <!--加减法 start-->
+                    <div class="score addsubtr">
+                      <p>指标得分=实际值*<input class="ipt-number" type="number" value="1"></p>
+                      <p><input class="ipt-number" type="number" value="0">
+                        <select>
+                          <option value="0"> >= </option>
+                          <option value="1"> > </option>
+                          <option value="2"> = </option>
+                          <option value="3"> <= </option>
+                          <option value="4"> < </option>
+                        </select>指标得分
+                        <select>
+                          <option value="0"> >= </option>
+                          <option value="1"> > </option>
+                          <option value="2"> = </option>
+                          <option value="3"> <= </option>
+                          <option value="4"> < </option>
+                        </select>
+                        <input class="ipt-number" type="number" value="10">
+                      </p>
+                    </div>
+                    <!--加减法 end-->
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label"><em> * </em>信息来源：</label>
+                  <div class="controls">
+                    <input type="text" class="form-control" placeholder="请输入信息来源" value="流量平台统计">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label"><em> * </em>信息提供者：</label>
+                  <div class="controls">
+                    <input type="text" class="form-control" placeholder="请输入信息提供者" value="运营部主管（李四）">
+                    <p style="color: #999;">市场中心/运营部</p>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label" for="menu_remark"><em> * </em>指标内容：</label>
+                  <div class="controls">
+                    <textarea name="menu_remark" cols="30" rows="5" placeholder="请输入指标内容">略</textarea>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" onclick="save_menu();"> 保存 </button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!--指标详情-->
+  </div>
+</div>  

@@ -1,0 +1,146 @@
+<div data-id="menu3" name="menu0">
+  <div class="tree well tree-container form-pane clearfix">
+    <div class="tree-list">
+      <ul class="all-list">
+        <div class="title">部门目录</div>
+        <div class="search-mini-wrapper">
+          <form action="#" class="search-mini">
+            <input name="search" type="text" placeholder="Search...">
+            <button type="submit">
+              <i class="icon-search"></i>
+            </button>
+          </form>
+        </div>
+        <li>
+          <span class="js-fcolor"><i class="icon-folder-open"></i>系统管理</span>
+          <span class="menu-icon"><i class="icon-close js-delete" data-toggle="modal" data-target="#deleteMenu">×</i></span>
+          <ul>
+            <li>
+              <span class="js-fcolor"><i class="icon-file"></i>菜单管理 </span>
+              <span class="menu-icon"><!-- <i class="icon-arrow-up"></i><i class="icon-arrow-down"></i> --><i class="icon-close js-delete" data-toggle="modal" data-target="#deleteMenu">×</i></span>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <span class="js-fcolor"><i class="icon-folder-open"></i>人事管理</span>
+          <span class="menu-icon"><i class="icon-close js-delete" data-toggle="modal" data-target="#deleteMenu">×</i></span>
+          <ul multiple name="right" size="8">
+            <li>
+              <span class="js-fcolor"><i class="icon-file"></i>部门管理 </span>
+              <span class="menu-icon"><!-- <i class="icon-arrow-up"></i><i class="icon-arrow-down"></i> --><i class="icon-close js-delete" data-toggle="modal" data-target="#deleteMenu">×</i></span>
+            </li>
+            <li>
+              <span class="js-fcolor"><i class="icon-file"></i>岗位管理 </span>
+              <span class="menu-icon"><!-- <i class="icon-arrow-up" onclick="moveUp(document.getElementById('right'));"></i><i class="icon-arrow-down"></i> --><i class="icon-close js-delete" data-toggle="modal" data-target="#deleteMenu">×</i></span>
+            </li>
+            <li>
+              <span class="js-fcolor"><i class="icon-file"></i>角色管理 </span>
+              <span class="menu-icon"><!-- <i class="icon-arrow-up"></i><i class="icon-arrow-down"></i> --><i class="icon-close js-delete" data-toggle="modal" data-target="#deleteMenu">×</i></span>
+            </li>
+            <li>
+              <span class="js-fcolor"><i class="icon-file"></i>员工管理 </span>
+              <span class="menu-icon"><!-- <i class="icon-arrow-up"></i><i class="icon-arrow-down"></i> --><i class="icon-close js-delete" data-toggle="modal" data-target="#deleteMenu">×</i></span>
+            </li>
+            <li>
+              <span class="js-fcolor"><i class="icon-file"></i>指标管理 </span>
+              <span class="menu-icon"><!-- <i class="icon-arrow-up"></i><i class="icon-arrow-down"></i> --><i class="icon-close js-delete" data-toggle="modal" data-target="#deleteMenu">×</i></span>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <span class="js-fcolor"><i class="icon-folder-open"></i>个人管理</span>
+          <span class="menu-icon"><i class="icon-close js-delete" data-toggle="modal" data-target="#deleteMenu">×</i></span>
+          <ul>
+            <li>
+              <span class="js-fcolor"><i class="icon-file"></i>修改密码 </span>
+              <span class="menu-icon"><!-- <i class="icon-arrow-up"></i><i class="icon-arrow-down"></i> --><i class="icon-close js-delete" data-toggle="modal" data-target="#deleteMenu">×</i></span>
+            </li>
+            <li>
+              <span class="js-fcolor"><i class="icon-file"></i>个人档案 </span>
+              <span class="menu-icon"><!-- <i class="icon-arrow-up"></i><i class="icon-arrow-down"></i> --><i class="icon-close js-delete" data-toggle="modal" data-target="#deleteMenu">×</i></span>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="form-list depart clearfix">
+      <!--<div class="title"><button class="btn btn-success" data-toggle="modal" data-target="#addDepart">新增部门</button></div>-->
+      <div class="right-container">
+        <form role="form">
+          <div class="form-group">
+            <label class="control-label">部门名称：</label>
+            <div class="controls">
+              <label>产品中心</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label"><em> * </em>上级组织：</label>
+            <div class="controls">
+              <label>东方网升</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label">部门岗位：</label>
+            <div class="controls">
+              <label>产品经理、产品助理、产品总监</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label">部门成员：</label>
+            <div class="controls">
+              <label>8人</label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="modal fade" id="addDepart" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> &times; </button>
+            <h4 class="modal-title" id="myModalLabel"> 新增部门 </h4>
+          </div>
+          <div class="modal-body">
+            <div class="tree-container" style="border:none;">
+              <div class="form-list clearfix" style="margin-left: 0;">
+                <form role="form">
+                  <div class="form-group">
+                    <label class="control-label"><em> * </em>上级组织：</label>
+                    <div class="controls">
+                      <button type="button" class="btn btn-default js-btn-select">
+                        <span>请选择</span>
+                        <i class="icon-plus fr js-selelct"></i>
+                      </button>
+                      <div class="tree-container list-select clearfix">
+                        <div class="tree-list">
+                          <ul>
+                            <li>
+                              <span><i class="icon-minus-sign"></i>岗位相关</span>
+                            </li>
+                            <li>
+                              <span><i class="icon-minus-sign"></i>绩效相关</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label"><em> * </em>部门名称：</label>
+                    <div class="controls">
+                      <input type="text" class="form-control" placeholder="请输入部门名称">
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary"> 保存 </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

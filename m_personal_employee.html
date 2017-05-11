@@ -1,0 +1,354 @@
+<div data-id="menu4" name="menu0">
+  <div class="tree well tree-container clearfix">
+    <div class="tree-list">
+      <ul class="all-list">
+        <div class="title">员工目录</div>
+        <div class="search-mini-wrapper">
+          <form action="#" class="search-mini">
+            <input name="search" type="text" placeholder="Search...">
+            <button type="submit">
+              <i class="icon-search"></i>
+            </button>
+          </form>
+        </div>
+        <li>
+          <span class="js-fcolor"><i class="icon-folder-open"></i>系统管理</span>
+          <span class="menu-icon"><i class="icon-close js-delete" data-toggle="modal" data-target="#deleteMenu">×</i></span>
+          <ul>
+            <li>
+              <span class="js-fcolor"><i class="icon-file"></i>菜单管理 </span>
+              <span class="menu-icon"><!-- <i class="icon-arrow-up"></i><i class="icon-arrow-down"></i> --><i class="icon-close js-delete" data-toggle="modal" data-target="#deleteMenu">×</i></span>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <span class="js-fcolor"><i class="icon-folder-open"></i>人事管理</span>
+          <span class="menu-icon"><i class="icon-close js-delete" data-toggle="modal" data-target="#deleteMenu">×</i></span>
+          <ul multiple name="right" size="8">
+            <li>
+              <span class="js-fcolor"><i class="icon-file"></i>部门管理 </span>
+              <span class="menu-icon"><!-- <i class="icon-arrow-up"></i><i class="icon-arrow-down"></i> --><i class="icon-close js-delete" data-toggle="modal" data-target="#deleteMenu">×</i></span>
+            </li>
+            <li>
+              <span class="js-fcolor"><i class="icon-file"></i>岗位管理 </span>
+              <span class="menu-icon"><!-- <i class="icon-arrow-up" onclick="moveUp(document.getElementById('right'));"></i><i class="icon-arrow-down"></i> --><i class="icon-close js-delete" data-toggle="modal" data-target="#deleteMenu">×</i></span>
+            </li>
+            <li>
+              <span class="js-fcolor"><i class="icon-file"></i>角色管理 </span>
+              <span class="menu-icon"><!-- <i class="icon-arrow-up"></i><i class="icon-arrow-down"></i> --><i class="icon-close js-delete" data-toggle="modal" data-target="#deleteMenu">×</i></span>
+            </li>
+            <li>
+              <span class="js-fcolor"><i class="icon-file"></i>员工管理 </span>
+              <span class="menu-icon"><!-- <i class="icon-arrow-up"></i><i class="icon-arrow-down"></i> --><i class="icon-close js-delete" data-toggle="modal" data-target="#deleteMenu">×</i></span>
+            </li>
+            <li>
+              <span class="js-fcolor"><i class="icon-file"></i>指标管理 </span>
+              <span class="menu-icon"><!-- <i class="icon-arrow-up"></i><i class="icon-arrow-down"></i> --><i class="icon-close js-delete" data-toggle="modal" data-target="#deleteMenu">×</i></span>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <span class="js-fcolor"><i class="icon-folder-open"></i>个人管理</span>
+          <span class="menu-icon"><i class="icon-close js-delete" data-toggle="modal" data-target="#deleteMenu">×</i></span>
+          <ul>
+            <li>
+              <span class="js-fcolor"><i class="icon-file"></i>修改密码 </span>
+              <span class="menu-icon"><!-- <i class="icon-arrow-up"></i><i class="icon-arrow-down"></i> --><i class="icon-close js-delete" data-toggle="modal" data-target="#deleteMenu">×</i></span>
+            </li>
+            <li>
+              <span class="js-fcolor"><i class="icon-file"></i>个人档案 </span>
+              <span class="menu-icon"><!-- <i class="icon-arrow-up"></i><i class="icon-arrow-down"></i> --><i class="icon-close js-delete" data-toggle="modal" data-target="#deleteMenu">×</i></span>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="form-list clearfix">
+      <div class="title">
+        <button class="btn btn-success" data-toggle="modal" data-target="#setRole">分配账号和角色</button>
+        <div class="right-search fr">
+         <div class="form-group">
+          <div class="controls">
+           <select class="form-control input-sm" name="state">
+            <option value="0">不限账号状态</option>
+            <option value="1">启用</option>
+            <option value="2">停用</option>
+            <option value="3">未设置</option>
+          </select>
+          <input type="text" name="search" placeholder="搜索员工姓名或账号"><i class="icon-search"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="right-container right-table select-table">
+   <div class="page">
+    <!-- Panel Page Database Table 1 Content: -->
+    <table id="table">
+      <thead>
+        <tr>
+          <th><span class="sel-ipt input-remember fl input-noremember js-selectAll"><em>&#10003;</em><input type="checkbox" id="selectAll"></span></th>
+          <th>姓名</th>
+          <th>工号</th>
+          <th>部门</th>
+          <th>岗位</th>
+          <th>人员类别</th>
+          <th>登录账号</th>
+          <th>账号状态</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="sel-ipt input-remember fl input-noremember"><em>&#10003;</em><input type="checkbox"></span></td>
+          <td><a data-id="employeeDetail" onclick="turnPage('m_personal_employee_detail.html',this)">张义</a></td>
+          <td>zhangyi</td>
+          <td>产品部</td>
+          <td>产品助理</td>
+          <td>产品助理</td>
+          <td>3411</td>
+          <td>启用</td>
+        </tr>
+        <tr>
+          <td><span class="sel-ipt input-remember fl input-noremember"><em>&#10003;</em><input type="checkbox"></span></td>
+          <td><a data-id="employeeDetail" onclick="turnPage('m_personal_employee_detail.html',this)">刘祎祎</a></td>
+          <td>liuyiyi</td>
+          <td>用户体验部</td>
+          <td>视觉设计师</td>
+          <td>视觉设计师</td>
+          <td>3412</td>
+          <td>启用</td>
+        </tr>
+        <tr>
+          <td><span class="sel-ipt input-remember fl input-noremember"><em>&#10003;</em><input type="checkbox"></span></td>
+          <td><a data-id="employeeDetail" onclick="turnPage('m_personal_employee_detail.html',this)">张二</a></td>
+          <td>zhanger</td>
+          <td>产品中心</td>
+          <td>产品助理</td>
+          <td>产品助理</td>
+          <td>3413</td>
+          <td>停用</td>
+        </tr>
+        <tr>
+          <td><span class="sel-ipt input-remember fl input-noremember"><em>&#10003;</em><input type="checkbox"></span></td>
+          <td><a data-id="employeeDetail" onclick="turnPage('m_personal_employee_detail.html',this)">张三</a></td>
+          <td>zhangsan</td>
+          <td>产品部</td>
+          <td>产品助理</td>
+          <td>产品助理</td>
+          <td>3414</td>
+          <td class="is-no">未分配</td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- /Panel Page Database Table 1 Content -->
+  </div>
+</div>
+<div class="page-container">
+  <ul class="pagination">
+    <li><a href="#">&lt;</a></li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#">&gt;</a></li>
+  </ul>
+</div>
+</div>
+
+<!-- 设置岗位/角色 start-->
+<div class="modal fade" id="setRole" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> &times; </button>
+        <h4 class="modal-title"> 分配账号和角色 </h4>
+      </div>
+      <div class="modal-body">
+        <div class="tree-container form-pane" style="border:none;">
+          <div class="form-list clearfix" style="margin-left: 0;">
+            <form role="form">
+              <div class="form-group">
+                <label class="control-label" for="id">工号：</label>
+                <div class="controls">
+                  <label>003412</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label" for="name">姓名：</label>
+                <div class="controls">
+                  <label>张二</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label"><em> * </em>登录账号：</label>
+                <div class="controls">
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label"><em> * </em>初始密码：</label>
+                <div class="controls">
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label"><em> * </em>角色：</label>
+                <div class="controls goal-controls">
+                  <div class="employee">
+                    <div class="selected-employee">
+                      <span>角色A<i class="icon-delete"> × </i></span>
+                      <span>角色B<i class="icon-delete"> × </i></span>
+                      <a class="js-addRole">+添加角色</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label"><em> * </em>账号状态：</label>
+                <div class="controls">
+                  <select class="form-control input-sm" name="jobCategory">
+                    <option value="0">启用</option>
+                    <option value="1">停用</option>
+                  </select>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary"> 保存 </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 设置岗位/角色 end -->
+<!-- 新增角色 start-->
+<div class="modal fade modal-select" id="addRole" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close js-close"> &times; </button>
+        <h4 class="modal-title"> 选择人员 </h4>
+      </div>
+      <div class="modal-body" style="max-height: inherit; padding: 0;">
+        <div class="tree-list">
+          <div class="search-input">
+            <input type="search" class="search-list" placeholder="搜索"><i class="icon-search"></i>
+          </div>
+          <ul class="select-ul">
+            <li>
+              <span class="js-fcolor"><i class="icon-folder-open"></i>总裁办<div class="radio radio-inline fr"><i class="icon-circle-blank"></i></div>
+              </span>
+              <ul>
+                <li>
+                  <span class="js-fcolor"><i class="icon-file"></i>啦啦啦
+                    <div class="radio radio-inline fr">
+                      <i class="icon-circle-blank"></i>
+                    </div>
+                  </span>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <span class="js-fcolor"><i class="icon-folder-open"></i>最佳东方
+                <div class="radio radio-inline fr">
+                  <i class="icon-circle-blank"></i>
+                </div>
+              </span>
+              <ul multiple name="right" size="8">
+                <li>
+                  <span class="js-fcolor"><i class="icon-folder-open"></i>运营部
+                    <div class="radio radio-inline fr">
+                     <i class="icon-circle-blank"></i>
+                   </div>
+                 </span>
+                 <ul>
+                  <li>
+                    <span class="js-fcolor"><i class="icon-folder-open"></i>运营中心
+                      <div class="radio radio-inline fr">
+                        <i class="icon-circle-blank"></i>
+                      </div>
+                    </span>
+                    <ul>
+                      <li>
+                        <span class="js-fcolor"><i class="icon-file"></i>哈哈哈
+                          <div class="radio radio-inline fr">
+                            <i class="icon-circle-blank"></i>
+                          </div>
+                        </span>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <span class="js-fcolor"><i class="icon-file"></i>222
+                  <div class="radio radio-inline fr">
+                    <i class="icon-circle-blank"></i>
+                  </div>
+                </span>
+              </li>
+              <li>
+                <span class="js-fcolor"><i class="icon-file"></i>333
+                  <div class="radio radio-inline fr">
+                    <i class="icon-circle-blank"></i>
+                  </div>
+                </span>
+              </li>
+              <li>
+                <span class="js-fcolor"><i class="icon-file"></i>444
+                  <div class="radio radio-inline fr">
+                    <i class="icon-circle-blank"></i>
+                  </div>
+                </span>
+              </li>
+              <li>
+                <span class="js-fcolor"><i class="icon-file"></i>555
+                  <div class="radio radio-inline fr">
+                    <i class="icon-circle-blank"></i>
+                  </div>
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="js-fcolor"><i class="icon-folder-open"></i>迈点
+              <div class="radio radio-inline fr">
+                <i class="icon-circle-blank"></i>
+              </div>
+            </span>
+            <ul>
+              <li>
+                <span class="js-fcolor"><i class="icon-file"></i>4444
+                  <div class="radio radio-inline fr">
+                    <i class="icon-circle-blank"></i>
+                  </div>
+                </span>
+              </li>
+              <li>
+                <span class="js-fcolor"><i class="icon-file"></i>5555
+                  <div class="radio radio-inline fr">
+                    <i class="icon-circle-blank"></i>
+                  </div>
+                </span>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="right-selected">
+        <p>已选择人员数：0</p>
+        <div class="selected-bg">
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-primary"> 保存 </button>
+    </div>
+  </div>
+</div>
+</div>
+<!-- 新增角色 end -->
+</div>
+</div>

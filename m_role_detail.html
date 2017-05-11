@@ -1,0 +1,246 @@
+<div data-id="roleDetail" name="menu0">
+  <div class="tree well tree-container clearfix">
+    <div class="form-list clearfix" style="margin-left: 0;">
+      <div class="right-container tree-container ">
+        <div class="employee role">
+          <div class="selected-title">基本信息(该页面不可编辑)</div>
+          <div class="selected-employee">
+            <div class="form-list" style="margin-left: 0;">
+              <form role="form">
+                <div class="form-group form-role">
+                  <label class="control-label">角色名称：</label>
+                  <div class="controls">
+                    <input type="text" class="form-control" placeholder="请输入角色名称">
+                  </div>
+                </div>
+                <div class="form-group form-role">
+                  <label class="control-label" for="gender">所属分类：</label>
+                  <div class="controls">
+                   <select class="form-control input-sm" name="category">
+                    <option value="0">默认分类</option>
+                    <option value="1">分类A</option>
+                    <option value="2">分类B</option>
+                    <option value="3">分类C</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label">备注：</label>
+                <div class="controls">
+                  <textarea name="menu_remark" id="info_remark" cols="30" rows="5" placeholder="请输入备注"></textarea>
+                </div>
+              </div>
+              <div class="form-group form-role">
+                <label class="control-label" for="creater">创建者：</label>
+                <div class="controls">
+                  <label>liuli 2016-10-20 12:00</label>
+                </div>
+              </div>
+              <div class="form-group form-role">
+                <label class="control-label" for="updater ">修改者：</label>
+                <div class="controls">
+                  <label>liuli 2016-10-20 13:00</label>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="employee">
+        <div class="selected-title">角色成员(<em>7</em>人)</div>
+        <div class="selected-employee">
+          <span><i class="icon-user"></i>张三<i class="icon-delete"> × </i></span>
+          <span><i class="icon-user"></i>张三<i class="icon-delete"> × </i></span>
+          <span><i class="icon-user"></i>张三<i class="icon-delete"> × </i></span>
+          <span><i class="icon-user"></i>张三<i class="icon-delete"> × </i></span>
+          <span><i class="icon-user"></i>张三<i class="icon-delete"> × </i></span>
+          <span><i class="icon-user"></i>张三<i class="icon-delete"> × </i></span>
+          <span><i class="icon-user"></i>张三<i class="icon-delete"> × </i></span>
+          <span><i class="icon-user"></i>张三<i class="icon-delete"> × </i></span>
+          <span><i class="icon-user"></i>张三<i class="icon-delete"> × </i></span>
+          <span><i class="icon-user"></i>张三<i class="icon-delete"> × </i></span>
+          <span><i class="icon-user"></i>张三<i class="icon-delete"> × </i></span>
+          <span><i class="icon-user"></i>张三<i class="icon-delete"> × </i></span>
+          <a class="addBtn" data-toggle="modal" data-target="#addRole">+添加成员</a>
+        </div>
+      </div>
+      <div class="employee">
+        <div class="selected-title">功能权限</div>
+        <div class="selected-employee">
+          <!-- 首页权限配置  start-->
+          <div class="role-power">
+            <div class="tree-list role-tree">
+              <ul>
+                <li>
+                  <span class="js-fcolor"><i class="icon-folder-open"></i><input type="checkbox">首页</span>
+                  <ul>
+                    <li>
+                      <span class="js-fcolor"><i class="icon-folder-open"></i><input type="checkbox">基础功能 </span>
+                      <ul>
+                        <li>
+                          <span class="js-fcolor"><i class="icon-file"></i><input type="checkbox">生日祝福 </span>
+                        </li>
+                        <li>
+                          <span class="js-fcolor"><i class="icon-file"></i><input type="checkbox">新入职员工 </span>
+                        </li>
+                        <li>
+                          <span class="js-fcolor"><i class="icon-file"></i><input type="checkbox">即将转正员工 </span>
+                        </li>
+                        <li>
+                          <span class="js-fcolor"><i class="icon-file"></i><input type="checkbox">人事统计 </span>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <span class="js-fcolor"><i class="icon-folder-open"></i><input type="checkbox">绩效相关 </span>
+                      <ul>
+                        <li>
+                          <span class="js-fcolor"><i class="icon-file"></i><input type="checkbox">我的绩效 </span>
+                        </li>
+                        <li>
+                          <span class="js-fcolor"><i class="icon-file"></i><input type="checkbox">绩效审批 </span>
+                        </li>
+                        <li>
+                          <span class="js-fcolor"><i class="icon-file"></i><input type="checkbox">信息提供 </span>
+                        </li>
+                        <li>
+                          <span class="js-fcolor"><i class="icon-file"></i><input type="checkbox">绩效排名 </span>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="js-fcolor"><i class="icon-folder-open"></i><input type="checkbox">系统管理</span>
+                  <ul>
+                    <li>
+                      <span class="js-fcolor"><i class="icon-folder-open"></i><input type="checkbox">菜单管理 </span>
+                      <ul>
+                        <li>
+                          <span class="js-fcolor"><i class="icon-file"></i><input type="checkbox">新增菜单 </span>
+                        </li>
+                        <li>
+                          <span class="js-fcolor"><i class="icon-file"></i><input type="checkbox">修改菜单 </span>
+                        </li>
+                        <li>
+                          <span class="js-fcolor"><i class="icon-file"></i><input type="checkbox">删除菜单 </span>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <span class="js-fcolor"><i class="icon-folder-open"></i><input type="checkbox">字典管理 </span>
+                      <ul>
+                        <li>
+                          <span class="js-fcolor"><i class="icon-file"></i><input type="checkbox">新增字典项 </span>
+                        </li>
+                        <li>
+                          <span class="js-fcolor"><i class="icon-file"></i><input type="checkbox">修改字典项 </span>
+                        </li>
+                        <li>
+                          <span class="js-fcolor"><i class="icon-file"></i><input type="checkbox">删除字典项 </span>
+                        </li>
+                        <li>
+                          <span class="js-fcolor"><i class="icon-file"></i><input type="checkbox">绩效排名 </span>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="js-fcolor"><i class="icon-folder-open"></i><input type="checkbox">人事管理</span>
+                  <ul>
+                    <li>
+                      <span class="js-fcolor"><i class="icon-file"></i><input type="checkbox">绩效考核 </span>
+                    </li>
+                    <li>
+                      <span class="js-fcolor"><i class="icon-file"></i><input type="checkbox">个人中心 </span>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- 首页权限配置 end -->
+        </div>
+      </div>
+      <div class="employee">
+        <div class="selected-title">数据权限</div>
+        <div class="selected-employee">
+          <div class="form-group state-radio">
+            <div class="radio radio-inline">
+              <label>
+                <input type="radio" name="dataPower"> 全公司
+              </label>
+            </div>
+            <div class="radio radio-inline">
+              <label>
+                <input type="radio" name="dataPower"> 所在部门及下级部门
+              </label>
+            </div>
+            <div class="radio radio-inline">
+              <label>
+                <input type="radio" name="dataPower"> 自己及直接下级
+              </label>
+            </div>
+            <div class="radio radio-inline js-depart">
+              <label>
+                <input type="radio" name="dataPower" checked="true"> 特定部门
+              </label>
+            </div>
+          </div>
+          <div class="tree-list role-tree js-departTree">
+            <ul>
+              <li>
+                <span class="js-fcolor"><i class="icon-folder-open"></i><input type="checkbox">东方网升</span>
+                <ul>
+                  <li>
+                    <span class="js-fcolor"><i class="icon-folder-open"></i><input type="checkbox">总裁办 </span>
+                    <ul>
+                      <li>
+                        <span class="js-fcolor"><i class="icon-file"></i><input type="checkbox">张三 </span>
+                      </li>
+                      <li>
+                        <span class="js-fcolor"><i class="icon-file"></i><input type="checkbox">李四 </span>
+                      </li>
+                      <li>
+                        <span class="js-fcolor"><i class="icon-file"></i><input type="checkbox">王五 </span>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="js-fcolor"><i class="icon-folder-open"></i><input type="checkbox">产品技术中心 </span>
+                    <ul>
+                      <li>
+                        <span class="js-fcolor"><i class="icon-folder-open"></i><input type="checkbox">产品中心 </span>
+                        <ul>
+                          <li>
+                            <span class="js-fcolor"><i class="icon-file"></i><input type="checkbox">张柳 </span>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <span class="js-fcolor"><i class="icon-folder-open"></i><input type="checkbox">产品部 </span>
+                        <ul>
+                          <li>
+                            <span class="js-fcolor"><i class="icon-file"></i><input type="checkbox">赵六 </span>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <span class="js-fcolor"><i class="icon-file"></i><input type="checkbox">技术中心 </span>
+                      </li>
+                      <li>
+                        <span class="js-fcolor"><i class="icon-file"></i><input type="checkbox">市场中心 </span>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<meta content="后台管理" name="description" />
+	<meta content="lily" name="author" />
+	<title>后台管理-登录</title>
+	<link rel="stylesheet" href="css/libs/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!--<link rel="stylesheet" href="css/login.css">-->
+	<script src="js/libs/respond.js"></script>
+    <script src="js/libs/html5.js"></script>
+</head>
+<body style="background: url('img/login_bg.png') !important; padding: 0;">
+	<div class="container-fluid-full">
+		<div class="row-fluid">
+			<div class="belt">
+				<img src="img/logo_dfws.png" alt="">
+			</div>
+			<div class="login-box">
+				<!-- <div class="icons">
+					<a href="main.html"><i class="icon-home"></i></a>
+					<a href="javascript:void(0)"><i class="icon-cog"></i></a>
+				</div> -->
+				<h2>
+					<span></span>
+					<img src="img/logo.png" alt="">
+					<p>企业管理系统</p>
+				</h2>
+				<form class="form-horizontal form-login" action="main.html" method="get">
+					<fieldset>
+						<div class="input-prepend" title="Username">
+							<input class="input-large span10" name="username" id="username" type="text" placeholder="请输入用户名">
+						</div>
+
+						<div class="input-prepend" title="Password">
+							<input class="input-large span10" name="password" id="password" type="password" placeholder="请输入密码">
+						</div>
+
+						<div class="input-prepend code" title="code">
+							<input class="input-large span10" name="code" type="text" id ="Txtidcode" class ="txtVerification" placeholder="验证码">
+							<span id="idcode"></span>
+						</div>
+						<div class="button-login">
+							<button type="button" class="btn btn-login" id="butn">登录</button>
+						</div>
+						<p>
+							<span class="input-remember fl js-auto"><em>&#10003;</em><input type="checkbox" id="remember"></span>自动登录
+							<span class="fr">忘记密码？</span>
+						</p>	
+					</fieldset>
+				</form>
+			</div><!--/span-->
+		</div><!--/row-->
+	</div>
+	<script src="js/libs/jquery-1.11.1.min.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/plugins/jquery.idcode.js"></script>
+	<script src="js/login.js"></script>
+	<script src="js/showTip.js"></script>
+</body>
+</html>

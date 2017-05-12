@@ -28,8 +28,26 @@ jQuery(function() {
             '<i class="icon-link"></i><h4 class="info">' + file.name + '</h4>' +
             '<p class="state">等待上传...</p>' +
         '<i class="icon-close">×</i></div>' );
-        $('#ctlBtn').show();
+
+        console.log($('#thelist .item').length);
+        if($('#thelist .item').length > 0){
+            $('#ctlBtn').show();
+        }
+
     });
+
+
+
+    // 移除等待上传项
+    $(document).on('click','.js-item .icon-close',function(){
+        $(this).parents('.js-item').remove();
+
+        if($('#thelist .item').length <= 0){
+            $('#ctlBtn').hide();
+        }
+    })
+
+
 
     // 文件上传过程中创建进度条实时显示。
     uploader.on( 'uploadProgress', function( file, percentage ) {
@@ -86,9 +104,4 @@ jQuery(function() {
     });
 
 
-
-    // 移除等待上传项
-    $(document).on('click','.js-item .icon-close',function(){
-    	$(this).parents('.js-item').remove();
-    })
 });

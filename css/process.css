@@ -99,6 +99,13 @@
 .apply-creater .tips > p{
     margin: 0;
 }
+.apply-creater .form-list{
+    margin-left: 0;
+}
+.tree-container .apply-creater .form-list .right-table{
+    margin: 0;
+}
+
 .apply-list{
 }
 .apply-list .pane{
@@ -122,19 +129,19 @@
 .apply-list .wu-example .btns #ctlBtn{
     display: none;
 }
-.apply-list .wu-example .uploader-list{
+.uploader-list{
     margin: 10px;
     padding: 10px;
 }
-.apply-list .wu-example .uploader-list .item{
+.uploader-list .item{
     display: inline-block;
     margin: 0 40px 0 0;
     position: relative;
 }
-.apply-list .wu-example .uploader-list .item .icon-link{
+.uploader-list .item .icon-link{
     color: #999;
 }
-.apply-list .wu-example .uploader-list .item .icon-close{
+.uploader-list .item .icon-close{
     position: absolute;
     top: 3px;
     right: -30px;
@@ -142,13 +149,13 @@
     color: #ff7c34;
     cursor: pointer;
 }
-.apply-list .wu-example .uploader-list .item > h4{
+.uploader-list .item > h4{
     font-weight: normal;
     font-size: 14px;
     display: inline-block;
     margin-left: 5px;
 }
-.apply-list .wu-example .uploader-list .item .state{
+.uploader-list .item .state{
     color: #f00;
     font-size: 12px;
     margin-left: 20px;

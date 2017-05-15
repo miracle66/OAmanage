@@ -49,6 +49,7 @@ window.onload = function() {
 	            for (j = 0; j < 25; j++) {
 	            	if (this == ckd[j]) {
 	            		// console.log(ckd[j])
+						
 	            		// console.log($('p' + j))
 	            		if ($("p" + j) == null) {
 	                        openNew(j, this.innerHTML); //设置标签显示文字

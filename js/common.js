@@ -24,7 +24,9 @@
 		document.getElementsByTagName('body')[0].appendChild(scriptTabSel);
 	},500)
 
-	if($(that).attr('data-id') == 'leaveApply'){
+	console.log($(that).attr('data-id'))
+	var txtIn = $(that).attr('data-id');
+	if(txtIn.indexOf("Apply") > 0){
 		var uploader = document.createElement("script");
 		uploader.type = "text/javascript";
 		uploader.src = "js/process/uploader.js";

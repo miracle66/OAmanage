@@ -109,6 +109,19 @@
     margin: 0;
 }
 
+.apply-creater.editPane > textarea{
+    width: 96%;
+    overflow: hidden;
+    height: 650px;
+    background: transparent;
+    box-shadow: none;
+    border: 1px solid #eee;
+    padding: 20px 2% 20px 2%;
+}
+
+input,button,select,textarea{outline:none}
+textarea{resize:none}
+
 .apply-list{
 }
 .apply-list .pane{

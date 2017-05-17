@@ -114,11 +114,19 @@ if( !('placeholder' in document.createElement('input')) ){
  var $menu = $('.topMenu a');
  $menu.on('click', function () {
  	var fg = $(this).siblings('.childMenu').hasClass('fadeIn animated infinite menu-active');
+    var fp = $(this).parent('.topMenu').siblings().children('.childMenu');
+	 console.log(fg);
+	 console.log(fp);
  	if (fg) {
+ 		console.log('1')
  		$(this).siblings('.childMenu').slideUp("fast");
  		$(this).siblings('.childMenu').removeClass('fadeIn animated infinite menu-active');
  	} else {
+		console.log('2')
  		$(this).siblings('.childMenu').slideDown("fast");
  		$(this).siblings('.childMenu').addClass('fadeIn animated infinite menu-active');
+
+		$(this).parent('.topMenu').siblings().children('.childMenu').slideUp("fast");
+		$(this).parent('.topMenu').siblings().children('.childMenu').removeClass('fadeIn animated infinite menu-active');
  	}
  })

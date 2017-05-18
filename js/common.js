@@ -118,11 +118,9 @@ if( !('placeholder' in document.createElement('input')) ){
 	 console.log(fg);
 	 console.log(fp);
  	if (fg) {
- 		console.log('1')
  		$(this).siblings('.childMenu').slideUp("fast");
  		$(this).siblings('.childMenu').removeClass('fadeIn animated infinite menu-active');
  	} else {
-		console.log('2')
  		$(this).siblings('.childMenu').slideDown("fast");
  		$(this).siblings('.childMenu').addClass('fadeIn animated infinite menu-active');
 

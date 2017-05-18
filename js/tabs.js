@@ -46,7 +46,8 @@ window.onload = function() {
                 // this.className = "bk";
 	            // $("welcome").style.display = "none" //欢迎内容隐藏
 	            //循环取得当前索引
-	            for (j = 0; j < 25; j++) {
+
+	            for (j = 0; j < ckd.length + 1; j++) {
 	            	if (this == ckd[j]) {
 	            		// console.log(ckd[j])
 						

@@ -1,0 +1,70 @@
+<div data-id="leaveRemark" name="menu0">
+	<!-- 请假制度说明 -->
+	<div class="tree-container tree form-pane">
+		<div class="form-list form-userinfo" style="margin-left: 0;">
+			<div class="right-container">
+				<div class="applys">
+					<div class="apply-top clearfix">
+						<span class="h2-title">请假制度说明</span>
+					</div>
+					<div class="apply-top clearfix">
+						<span class="h2-title">创建时间：<em>2017年2月24日09:56:45</em></span><span class="h2-title">作者：<em>系统管理员</em></span>
+						<div class="fr remarkBtn">
+							<button id="edit" type="button" class="btn btn-primary" onClick="editTxt()"> 编辑 </button>
+							<button id="save" type="button" class="btn btn-primary" onClick="saveTxt()"> 保存 </button>
+						</div>
+					</div>
+					<div class="apply-container">
+						<div class="apply-creater editPane">
+							<textarea name="" id="remarkExplain" cols="30" rows="10" disabled>为进一步完善管理制度，明确公司休假规定，保障员工合法权益，根据国家有关劳动法律法规，制定员工请假管理制度。
+一、假期种类：事假、病假、婚假、产假、丧假、工伤假、法定节日、周休息日。
+
+二、请假制度：
+
+1、员工请事假、病假、婚假、产假、丧假、工伤假应提前1天由本人提出书面申请;假期2天以上5天以下应提前3天请假;6天以上应提前10天请假。续假必须得到总经理批准，并及时补请假单，请假超过15天的，续假期不得超过5天。
+
+若遇特殊情况应先口头请假，经获准后可予事后主动补办请假手续，否则以旷工处;未办手续擅离岗位，或假期届满仍未销假、续假者，均以旷工论处。
+
+2、请假时应办理好工作交接，不得因请假延误工作。
+
+3、假期满应准时到岗复工，上班时间请假或销假必须在第一时间打卡记录，并到办公室办理销假手续，办公室人员不在时，可暂由部门经理或总经理办理，并在办公室人员在岗时上交销假手续，否则以旷工处。
+
+4、假期计算：
+
+⑴假期连续在5天或5天以下的，其间的公休日或法定假日均不计算在内。
+
+⑵假期连续在5天以上的，其间公休日或法定假日均计算在内。
+
+⑶请假以半小时为最小单位，0-35分钟为半小时，35-65分钟为1小时，65-95分钟为1.5小时，95-125分钟为2小时，单次请假超过2小时以半天计。
+
+5、公司职员请假，均须记录请假人联络方式，以备紧急联络、维持正常工作秩序。
+
+6、请假审批流程：
+
+⑴员工填写公司制定的《请期申请单》，并按规定程序审批。</textarea>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 请假制度说明 end -->
+</div>
+<script>
+	var txt = document.getElementById('remarkExplain');
+	var btn = document.getElementById('jsBtn')
+	function editTxt(){
+		txt.removeAttribute('disabled');
+		$(txt).css({'background':'#eee'});
+		$('#edit').hide();
+		$('#save').show();
+		txt.focus();
+	}
+
+	function saveTxt() {
+		$(txt).attr('disabled',true);
+		$(txt).css({'background':'none'});
+		$('#edit').show();
+		$('#save').hide();
+	}
+</script>

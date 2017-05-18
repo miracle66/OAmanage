@@ -53,6 +53,10 @@
     line-height: 25px;
     margin: 20px 0;
 }
+.apply-creater .formTitle{
+    font-style: normal;
+    font-size:16px;
+}
 .apply-step{
     margin-bottom: 20px;
 }
@@ -94,7 +98,6 @@
 }
 .apply-creater .tips{
     display: inline-block;
-    width: 950px;
 }
 .apply-creater .tips,.apply-creater > span{
     color: #f00;
@@ -131,6 +134,7 @@ textarea{resize:none}
 }
 .apply-list .pane textarea{
     vertical-align: top;
+    width:300px;
 }
 .apply-list .pane > label{
     display: inline-block;
@@ -191,4 +195,8 @@ textarea{resize:none}
     color: #fff;
     font-style: normal;
     cursor: pointer;
+}
+
+.remarkBtn #save{
+    display: none;
 }

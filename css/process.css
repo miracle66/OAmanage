@@ -2,6 +2,13 @@
 
 
 /*流程管理*/
+.newModal{
+    width:40%;
+    left:30%;
+    margin-left: 0;
+}
+
+
 .apply-top{
     line-height: 32px;
 }
@@ -130,7 +137,7 @@ textarea{resize:none}
 .apply-list .pane{
     width: 395px;
     display: inline-block;
-    margin: 10px 0;
+    margin: 20px 0;
 }
 .apply-list .pane textarea{
     vertical-align: top;
@@ -199,4 +206,52 @@ textarea{resize:none}
 
 .remarkBtn #save{
     display: none;
+}
+
+
+/*办公用平 选择器*/
+.newModal .modal-body{
+    padding:0;
+    overflow: hidden;
+}
+.selects{
+}
+.selects .goods{
+    display: inline-block;
+    width:33%;
+    vertical-align: top;
+    height: 400px;
+    overflow-y: auto;
+}
+.selects .goods ul li{
+    padding:10px 0;
+    text-align: center;
+    cursor: pointer;
+}
+.selects .goods ul .active,.selects .goods.active{
+    background: #e7f2fc;
+}
+.selects .goods.goodsList{
+    width:30%;
+}
+.selects .goods.goodsList ul li{
+    text-align: left;
+    padding-left: 20px;
+}
+.selects .goods.selectedGoods{
+    padding: 10px 0;
+    width: 36%;
+}
+.selects .goods.selectedGoods .selItem{
+    background: #eeeeee;
+    padding: 5px;
+    margin: 3px;
+    width: 75px;
+    float: left;
+    font-size: 12px;
+}
+.selects .goods.selectedGoods .selItem .icon-delete{
+    float: right;
+    margin-top: 3px;
+    cursor: pointer;
 }

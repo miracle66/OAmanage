@@ -60,8 +60,38 @@
 							</div>
 							<div class="apply-list">
 								<div class="pane">
-									<label for="">申请明细：</label><span><a href="javascript:void(0);">请选择</a></span>
-
+									<label for="">申请明细：</label><span><a data-toggle="modal" data-target="#goodsSelect">请选择</a></span>
+								</div>
+								<div class="form-list" style="margin-left: 70px;">
+									<div class="right-table">
+										<div class="page">
+											<table>
+												<thead>
+												<tr>
+													<th>物品名称</th>
+													<th>物品类别</th>
+													<th>物品规格</th>
+													<th>库存数量</th>
+													<th>物品数量</th>
+												</tr>
+												</thead>
+												<tr>
+													<td><a href="javascript:void(0);">我是物品1</a></td>
+													<td>我是物品类别1</td>
+													<td>我是物品规格...</td>
+													<td>1</td>
+													<td>1</td>
+												</tr>
+												<tr>
+													<td><a href="javascript:void(0);">我是物品2</a></td>
+													<td>我是物品类别1</td>
+													<td>我是物品规格...</td>
+													<td>1</td>
+													<td>1</td>
+												</tr>
+											</table>
+										</div>
+									</div>
 								</div>
 							</div>
 							<div class="apply-list">
@@ -129,7 +159,7 @@
 		</div>
 
 		<!-- 选择人员 start-->
-		<div class="modal fade" id="personModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal fade newModal" id="personModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="modal-header">
@@ -147,6 +177,85 @@
 		</div>
 		<!-- 选择人员 end -->
 
+		<!-- 申请办公物品 选择 start-->
+		<div class="modal fade newModal" id="goodsSelect" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true"> &times; </button>
+						<h4 class="modal-title"> 请选择 </h4>
+					</div>
+					<div class="modal-body">
+						<div class="selects">
+							<div class="goods leftGoods fl">
+								<ul>
+									<li class="active">我是物品类别1</li>
+									<li>我是物品类别2</li>
+									<li>我是物品类别3</li>
+								</ul>
+							</div>
+							<div class="goods goodsList active">
+								<ul>
+									<li><input type="checkbox" value="我是物品1"> 我是物品1</li>
+									<li><input type="checkbox" value="我是物品2"> 我是物品2</li>
+									<li><input type="checkbox" value="我是物品3"> 我是物品3</li>
+									<li><input type="checkbox" value="我是物品4"> 我是物品4</li>
+									<li><input type="checkbox" value="我是物品5"> 我是物品4</li>
+									<li><input type="checkbox" value="我是物品6"> 我是物品4</li>
+									<li><input type="checkbox" value="我是物品7"> 我是物品4</li>
+									<li><input type="checkbox" value="我是物品8"> 我是物品4</li>
+									<li><input type="checkbox" value="我是物品9"> 我是物品4</li>
+									<li><input type="checkbox" value="我是物品10"> 我是物品4</li>
+									<li><input type="checkbox" value="我是物品11"> 我是物品4</li>
+									<li><input type="checkbox" value="我是物品12"> 我是物品4</li>
+									<li><input type="checkbox" value="我是物品13"> 我是物品4</li>
+									<li><input type="checkbox" value="我是物品14"> 我是物品4</li>
+									<li><input type="checkbox" value="我是物品15"> 我是物品4</li>
+									<li><input type="checkbox" value="我是物品16"> 我是物品4</li>
+									<li><input type="checkbox" value="我是物品17"> 我是物品4</li>
+								</ul>
+							</div>
+							<div class="goods selectedGoods">
+								<div class="selItem"><span>我是物品1</span><i class="icon-delete"> &times; </i></div>
+								<div class="selItem"><span>我是物品1</span><i class="icon-delete"> &times; </i></div>
+								<div class="selItem"><span>我是物品1</span><i class="icon-delete"> &times; </i></div>
+								<div class="selItem"><span>我是物品1</span><i class="icon-delete"> &times; </i></div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary"> 确认 </button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 申请办公物品 选择 end -->
+
 	</div>
 	<!-- 办公用品申请单 end -->
 </div>
+
+<script>
+	$(document).on('click','.leftGoods ul li',function () {
+		$(this).addClass('active').siblings('li').removeClass('active');
+		$('.goodsList').addClass('active');
+	})
+
+	$(document).on('click','.selItem .icon-delete',function () {
+		$(this).parent().remove();
+	})
+
+	$('.goodsList ul li input:checkbox').change(function () {
+		if($(this).is(":checked")){
+			var $value =  $(this).val();
+			$('.selectedGoods').append('<div class="selItem"><span>'+ $value +'</span><i class="icon-delete"> × </i></div>');
+		}else{
+			$('.selectedGoods').find('.selitem:last-child').remove();
+		}
+
+//		console.log($(this).val());
+//		var $value =  $(this).val();
+////		$('.selectedGoods .selitem > span').text($value);
+//		$('.selectedGoods').append('<div class="selItem"><span>'+ $value +'</span><i class="icon-delete"> × </i></div>');
+	})
+</script>

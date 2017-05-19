@@ -128,3 +128,27 @@ if( !('placeholder' in document.createElement('input')) ){
 		$(this).parent('.topMenu').siblings().children('.childMenu').removeClass('fadeIn animated infinite menu-active');
  	}
  })
+
+
+
+
+// ---------------------------------------append js-----------------------------------------
+
+/*申请流程 制度说明 js*/
+
+/*编辑内容*/
+function editTxt(){
+	$('#remarkExplain').removeAttr('disabled');
+	$('#remarkExplain').css({'background':'#eee'});
+	$('#edit').hide();
+	$('#save').show();
+	$('#remarkExplain').focus();
+}
+
+/*保存内容*/
+function saveTxt() {
+	$('#remarkExplain').attr('disabled',true);
+	$('#remarkExplain').css({'background':'none'});
+	$('#edit').show();
+	$('#save').hide();
+}

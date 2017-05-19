@@ -50,21 +50,3 @@
 	</div>
 	<!-- 物品报废申请单说明 end -->
 </div>
-<script>
-	var txt = document.getElementById('remarkExplain');
-	var btn = document.getElementById('jsBtn')
-	function editTxt(){
-		txt.removeAttribute('disabled');
-		$(txt).css({'background':'#eee'});
-		$('#edit').hide();
-		$('#save').show();
-		txt.focus();
-	}
-
-	function saveTxt() {
-		$(txt).attr('disabled',true);
-		$(txt).css({'background':'none'});
-		$('#edit').show();
-		$('#save').hide();
-	}
-</script>

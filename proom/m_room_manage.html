@@ -1,51 +1,143 @@
 <div data-id="roomManage" name="menu0">
 	<!-- 会议室管理 -->
-	<div class="tree-container tree form-pane">
-		<div class="form-list form-userinfo" style="margin-left: 0;">
-			<div class="right-container">
-				<div class="applys">
-					<div class="apply-top clearfix">
-						<span class="h2-title">会议室管理</span>
-						<div class="fr">
-							<button type="button" class="btn btn-primary"> 提交 </button>
-							<button type="button" class="btn btn-default"> 保存 </button>
-							<button type="button" class="btn btn-default" data-id="leavePreview" onclick="turnPage('process/m_leave_preview.html',this)"> 预览 </button>
-							<button type="button" class="btn btn-default"> 删除 </button>
-							<button type="button" class="btn btn-default"> 结束 </button>
-						</div>
-					</div>
-					<div class="apply-container">
-						<div class="apply-creater">
-							<h2 class="formTitle">历史请假申请记录信息</h2>
-							<div class="form-list">
-								<div class="right-table">
-									<div class="page">
-										<table>
-											<thead>
-												<tr>
-													<th>请假类型</th>
-													<th>开始时间</th>
-													<th>结束时间</th>
-													<th>天数</th>
-													<th>相关流程</th>
-												</tr>
-											</thead>
-											<tr>
-												<td>年假</td>
-												<td>2017年1月24日10:06:01</td>
-												<td>2017年2月24日10:06:17</td>
-												<td>30.00</td>
-												<td><a href="javascript:void(0);">QJ01-请假申请流程(2017-01-24 10:06:05 小五子)</a></td>
-											</tr>
-										</table>
+	<div class="tree-container tree roomMine">
+		<div id="myTabContent" class="tab-content">
+			<!-- start-->
+			<div class="tab-pane fade in active">
+				<div class="form-list">
+					<div class="right-container right-table">
+						<div class="page companyPerformance">
+							<div class="form-group js-roomOrder">
+								<div class="company-select">
+									<label>会议室名称：</label>
+									<div class="controls">
+										<select>
+											<option>请选择</option>
+											<option value="1">会议室1</option>
+											<option value="2">会议室2</option>
+										</select>
 									</div>
 								</div>
+								<div class="company-select">
+									<label>可容纳人数：</label>
+									<div class="controls"><input type="text"></div> ~ <div class="controls"><input type="text"></div>
+								</div>
+								<div class="company-select">
+									<button type="button" class="btn btn-primary"> 查询 </button>
+								</div>
+							</div>
+							<div class="title">
+								<button class="btn btn-success" data-toggle="modal" data-target="#addRoom">新增会议室</button>
+								<button class="btn btn-success">删除</button>
+							</div>
+							<table>
+								<thead>
+								<tr>
+									<th><input type="checkbox" id="selectAll"></th>
+									<th>会议室名称</th>
+									<th>容纳人数</th>
+									<th>电话</th>
+									<th>备注</th>
+									<th>操作</th>
+								</tr>
+								</thead>
+								<tr>
+									<td><input type="checkbox"></td>
+									<td>会议室1</td>
+									<td>12</td>
+									<td>0571-55548137</td>
+									<td>备注啥备注啥</td>
+									<td><span><a href="javascript:void(0);"  data-toggle="modal" data-target="#addRoom">编辑</a> | <a href="javascript:void(0);">删除</a></span></td>
+								</tr>
+								<tr>
+									<td><input type="checkbox"></td>
+									<td>会议室2</td>
+									<td>12</td>
+									<td>0571-55548137</td>
+									<td>备注啥备注啥</td>
+									<td><span><a href="javascript:void(0);"  data-toggle="modal" data-target="#addRoom">编辑</a> | <a href="javascript:void(0);">删除</a></span></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="page-container">
+						<ul class="pagination">
+							<li><a href="#">&lt;</a></li>
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li><a href="#">&gt;</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- end -->
+		</div>
+		<!--新增/编辑会议室 窗口-->
+		<div class="modal fade" id="addRoom" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true"> &times; </button>
+						<h4 class="modal-title"> 新增/编辑会议室 </h4>
+					</div>
+					<div class="modal-body roomModal">
+						<div class="tree-container">
+							<div class="form-list clearfix">
+								<form role="form">
+									<div class="form-group">
+										<label class="control-label">会议室名称：</label>
+										<div class="controls">
+											<input type="text" class="form-control" placeholder="请输入会议室名称">
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="control-label">电话：</label>
+										<div class="controls">
+											<input type="text" class="form-control" placeholder="请输入电话">
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="control-label">容纳人数：</label>
+										<div class="controls">
+											<input type="text" class="form-control" placeholder="请输入容纳人数">
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="control-label">会议室规则：</label>
+										<div class="controls">
+											<textarea name="menu_remark" cols="30" rows="10" placeholder="请输入会议室规则"></textarea>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="control-label">备注：</label>
+										<div class="controls">
+											<textarea name="menu_remark" cols="30" rows="5" placeholder="备注"></textarea>
+										</div>
+									</div>
+								</form>
 							</div>
 						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary"> 保存 </button>
 					</div>
 				</div>
 			</div>
 		</div>
+		<!--新增/编辑会议室 窗口-->
 	</div>
 	<!-- 会议室管理 end -->
 </div>
+<script>
+	//	// 会议日期控件
+	$(".js-roomOrder .date").datetimepicker({
+		minView: "", //选择日期后，不会再跳转去选择时分秒
+		language:  'zh-CN',
+		format: 'yyyy-mm-dd hh:ii',
+		todayBtn:  1,
+		autoclose: 1
+	});
+</script>

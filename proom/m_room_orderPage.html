@@ -1,0 +1,87 @@
+<div data-id="roomOrderApply" name="menu0">
+	<!-- 预订会议室 -->
+	<div class="tree-container tree roomMine">
+		<div class="form-list form-userinfo">
+			<div class="right-container">
+				<div class="applys">
+					<div class="apply-top clearfix">
+						<span class="h2-title">预订/编辑会议室</span>
+						<div class="fr">
+							<button type="button" class="btn btn-primary"> 提交 </button>
+							<button type="button" class="btn btn-default"> 取消 </button>
+						</div>
+					</div>
+					<div class="apply-container">
+						<div class="apply-creater">
+							<span class="fl">会议室需预定须知：</span>
+							<div class="tips">
+								<p>1、会议室均由总经办统一管理，统筹协调安排使用，并负责室内卫生清洁、绿植更换、设备设施维护保养等各项日常管理工作。 </p>
+								<p>2、部门或个人需要使用会议室时，需提前至少半天向总经办提出申请，填写在《会议室使用登记簿》上，经办公室准许后方可使用。</p>
+								<p>3、 负责会务人员需提前至前台领取钥匙，打开会议室门，需要使用音响、投影设备的，提前安装调试。 </p>
+								<p>4、使用原则：先申请后使用，按申请的先后顺序使用。没有经过申请的部门或个人临时需使用，可以使用。</p>
+							</div>
+						</div>
+						<div class="apply-creater">
+							<span class="h2-title">表单信息</span>
+							<div class="apply-list js-roomOrder">
+								<div class="pane"><label for="">申请人：</label><span>小五子</span></div>
+								<div class="pane"><label for="">会议室名称：</label><span>产品中心</span></div>
+								<div class="pane"><label for="">会议主题：</label><input type="text" placeholder="请输入会议主题"></div>
+								<div class="pane input-append date"><label for="">*开始时间：</label>
+									<input size="16" name="startTime" type="text" value="">
+									<span class="add-on"><i class="icon-calendar"></i></span>
+								</div>
+								<div class="pane input-append date"><label for="">*结束时间：</label>
+									<input size="16" name="startTime" type="text" value="">
+									<span class="add-on"><i class="icon-calendar"></i></span>
+								</div>
+							</div>
+							<div class="apply-list">
+								<div class="pane singlePane"><label for="">申请理由：</label>
+									<textarea name="" id="" cols="30" rows="4" placeholder="请填写申请理由"></textarea>
+								</div>
+							</div>
+						</div>
+						<div class="apply-creater">
+							<div class="apply-list">
+								<div class="employee">
+									<label for="">参加人员：</label>
+									<div class="selected-employee">
+										<span><i class="icon-user"></i><input type="checkbox" style="display: none;" checked="checked" name="checkers" value="263">季晓梅 <i class="icon-delete" onclick="$(&quot;.employee .selected-title em&quot;).text(parseInt($(&quot;.employee .selected-title em&quot;).text())-1);$(this).parent().remove();"> × </i></span>
+										<a class="addBtn" data-toggle="modal" data-target="#personModal"><em class="emcircle"  id="leave_checker">+</em></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="apply-creater">
+							<div class="apply-list">
+								<div id="uploader" class="wu-example">
+									<div class="btns">
+										<div id="picker"><span class="icon-upload-alt">选择附件</span></div>
+									</div>
+									<!--用来存放文件信息-->
+									<div id="thelist" class="uploader-list"></div>
+									<div class="btns">
+										<button id="ctlBtn" class="btn btn-default">开始上传</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 预订会议室 end -->
+</div>
+
+<script>
+//	// 会议日期控件
+$(".js-roomOrder .date").datetimepicker({
+	minView: "", //选择日期后，不会再跳转去选择时分秒
+	language:  'zh-CN',
+	format: 'yyyy-mm-dd hh:ii',
+	todayBtn:  1,
+	autoclose: 1
+});
+</script>

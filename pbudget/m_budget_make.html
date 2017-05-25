@@ -1,50 +1,120 @@
 <div data-id="budgetMake" name="menu0">
 	<!-- 制定预算 -->
-	<div class="tree-container tree form-pane">
-		<div class="form-list form-userinfo" style="margin-left: 0;">
-			<div class="right-container">
-				<div class="applys">
-					<div class="apply-top clearfix">
-						<span class="h2-title">制定预算</span>
-						<div class="fr">
-							<button type="button" class="btn btn-primary"> 提交 </button>
-							<button type="button" class="btn btn-default"> 保存 </button>
-							<button type="button" class="btn btn-default" data-id="leavePreview" onclick="turnPage('process/m_leave_preview.html',this)"> 预览 </button>
-							<button type="button" class="btn btn-default"> 删除 </button>
-							<button type="button" class="btn btn-default"> 结束 </button>
-						</div>
-					</div>
-					<div class="apply-container">
-						<div class="apply-creater">
-							<h2 class="formTitle">历史请假申请记录信息</h2>
-							<div class="form-list">
-								<div class="right-table">
-									<div class="page">
-										<table>
-											<thead>
-												<tr>
-													<th>请假类型</th>
-													<th>开始时间</th>
-													<th>结束时间</th>
-													<th>天数</th>
-													<th>相关流程</th>
-												</tr>
-											</thead>
-											<tr>
-												<td>年假</td>
-												<td>2017年1月24日10:06:01</td>
-												<td>2017年2月24日10:06:17</td>
-												<td>30.00</td>
-												<td><a href="javascript:void(0);">QJ01-请假申请流程(2017-01-24 10:06:05 小五子)</a></td>
-											</tr>
-										</table>
+	<div class="tree-container tree roomMine">
+		<div id="myTabContent" class="tab-content">
+			<!-- start-->
+			<div class="tab-pane fade in active">
+				<div class="form-list">
+					<div class="right-container right-table">
+						<div class="page companyPerformance">
+							<div class="form-group js-roomOrder">
+								<div class="company-select">
+									<label>部门：</label>
+									<div class="controls">
+										<select>
+											<option>请选择</option>
+											<option value="1">财务部</option>
+											<option value="2">技术部</option>
+										</select>
 									</div>
 								</div>
+								<div class="company-select">
+									<label>自：</label>
+									<div class="controls">
+										<select>
+											<option>请选择</option>
+											<option value="1">2017</option>
+											<option value="2">2018</option>
+										</select> 年
+									</div> ~
+									<div class="controls">
+										<select>
+											<option>请选择</option>
+											<option value="1">2017</option>
+											<option value="2">2018</option>
+										</select> 年
+									</div>
+								</div>
+								<div class="company-select">
+									<label>状态：</label>
+									<div class="controls">
+										<select>
+											<option>请选择</option>
+											<option value="1">已审核</option>
+											<option value="2">未审核</option>
+										</select>
+									</div>
+								</div>
+								<div class="company-select">
+									<button type="button" class="btn btn-primary"> 查询 </button>
+								</div>
 							</div>
+							<div class="title">
+								<button class="btn btn-success" data-id="addBudget" onclick="turnPage('pbudget/m_budget_add.html',this)">新增预算</button>
+								<button class="btn btn-success" data-id="addBudget" onclick="turnPage('pbudget/m_budget_add.html',this)">预算调整</button>
+								<button class="btn btn-success" data-toggle="modal" data-target="#addRoom">审核确认</button>
+								<button class="btn btn-success" data-toggle="modal" data-target="#addRoom">导出</button>
+								<button class="btn btn-success">删除</button>
+							</div>
+							<table>
+								<thead>
+								<tr>
+									<th><input type="checkbox" id="selectAll"></th>
+									<th>名称</th>
+									<th>部门</th>
+									<th>预算总额</th>
+									<th>追加预算</th>
+									<th>状态</th>
+									<th>审核人</th>
+									<th>审核时间</th>
+									<th>最后操作人</th>
+									<th>操作时间</th>
+									<th>操作</th>
+								</tr>
+								</thead>
+								<tr>
+									<td><input type="checkbox"></td>
+									<td>2017年预算</td>
+									<td>技术部</td>
+									<td>1,000,123元</td>
+									<td>1000元</td>
+									<td>未审核</td>
+									<td>夏利</td>
+									<td>2015-09-28 08:50:08</td>
+									<td>夏利</td>
+									<td>2015-09-28 08:50:08</td>
+									<td><span><a href="javascript:void(0);"  data-id="addBudget" onclick="turnPage('pbudget/m_budget_add.html',this)">查看</a> | <a href="javascript:void(0);">删除</a> |<a href="javascript:void(0);">导出</a></span></td>
+								</tr>
+								<tr>
+									<td><input type="checkbox"></td>
+									<td>2017年预算</td>
+									<td>技术部</td>
+									<td>1,000,123元</td>
+									<td>1000元</td>
+									<td>未审核</td>
+									<td>夏利</td>
+									<td>2015-09-28 08:50:08</td>
+									<td>夏利</td>
+									<td>2015-09-28 08:50:08</td>
+									<td><span><a href="javascript:void(0);"  data-id="addBudget" onclick="turnPage('pbudget/m_budget_add.html',this)">查看</a> | <a href="javascript:void(0);">删除</a> |<a href="javascript:void(0);">导出</a></span></td>
+								</tr>
+							</table>
 						</div>
+					</div>
+					<div class="page-container">
+						<ul class="pagination">
+							<li><a href="#">&lt;</a></li>
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li><a href="#">&gt;</a></li>
+						</ul>
 					</div>
 				</div>
 			</div>
+			<!-- end -->
 		</div>
 	</div>
 	<!-- 制定预算 end -->

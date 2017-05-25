@@ -12,30 +12,21 @@
 					</div>
 					<div class="apply-container">
 						<div class="apply-creater">
-							<div class="apply-step">
-								<div class="steps">
-									<span class="notes"><i class="icircle"><em>√</em></i>&emsp;创建</span><hr>
-									<p>小五子</p>
-									<p>2017-05-09 12:23:04</p>
-								</div>
-								<div class="steps">
-									<span class="notes"><i class="icircle"><em>√</em></i>&emsp;创建</span><hr>
-									<p>小五子</p>
-									<p>2017-05-09 12:23:04</p>
-								</div>
-								<div class="steps">
-									<span class="notes"><i class="icircle"><em>√</em></i>&emsp;创建</span>
-									<p>小五子</p>
-									<p>2017-05-09 12:23:04</p>
-								</div>
-							</div>
-						</div>
-						<div class="apply-creater">
 							<span class="h2-title">表单信息</span>
 							<div class="apply-list">
 								<div class="pane"><label for="">申请人：</label><span>小五子</span></div>
 								<div class="pane"><label for="">申请人部门：</label><span>产品中心</span></div>
 								<div class="pane"><label for="">工号：</label><span>A007</span></div>
+								<div class="pane"><label for="">岗位：</label><span>产品助理</span></div>
+								<div class="pane"><label for="">*用车类型：</label>
+									<select name="" id="">
+										<option value="">请选择</option>
+										<option value="">送货</option>
+										<option value="">接/送客户</option>
+										<option value="">出差</option>
+										<option value="">其他</option>
+									</select>
+								</div>
 								<div class="pane"><label for="">*紧急程度：</label>
 									<select name="" id="">
 										<option value="">请选择</option>
@@ -44,21 +35,25 @@
 										<option value="">紧急</option>
 									</select>
 								</div>
-								<div class="pane input-append date"><label for="">*开始时间：</label>
+								<div class="pane input-append date"><label for="">*预计用车日期：</label>
 									<input size="16" name="startTime" type="text" value="">
 									<span class="add-on"><i class="icon-calendar"></i></span>
 								</div>
-								<div class="pane input-append date"><label for="">*结束时间：</label>
-									<input size="16" name="startTime" type="text" value="">
-									<span class="add-on"><i class="icon-calendar"></i></span>
+								<div class="pane">
+									<label for="">*是否需要司机：</label>
+									<label for="lab1" class="lab-radio"><input id="lab1" type="radio" name="needDriver" value="1"> 是</label>
+									<label for="lab2" class="lab-radio"><input id="lab2" type="radio" name="needDriver" value="0" checked> 否</label>
 								</div>
 							</div>
 							<div class="apply-list">
-								<div class="pane"><label for="">加班天数：</label><span>0.5</span></div>
-								<div class="pane"><label for="">已加班天数：</label><span>8</span></div>
+								<div class="pane singlePane"><label for="">预计行车路线：</label>
+									<textarea name="" id="" cols="30" rows="4" placeholder="请填写预计行车路线"></textarea>
+								</div>
 							</div>
 							<div class="apply-list">
-								<div class="pane"><label for="">加班原因：</label><textarea name="" id="" cols="30" rows="4"></textarea></div>
+								<div class="pane singlePane"><label for="">申&ensp;请&ensp;理&ensp;由：</label>
+									<textarea name="" id="" cols="30" rows="4" placeholder="请填写申请理由"></textarea>
+								</div>
 							</div>
 						</div>
 					</div>

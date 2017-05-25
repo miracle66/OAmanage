@@ -49,27 +49,6 @@
 								<div class="pane"><label for="">申请部门：</label><span>产品中心</span></div>
 								<div class="pane"><label for="">工号：</label><span>A007</span></div>
 								<div class="pane"><label for="">岗位：</label><span>产品助理</span></div>
-								<div class="pane"><label for="">*申请类型：</label>
-									<select name="" id="">
-										<option value="">请选择</option>
-										<option value="">事假</option>
-										<option value="">病假</option>
-										<option value="">调休</option>
-										<option value="">休假</option>
-										<option value="">婚假</option>
-										<option value="">产假</option>
-										<option value="">陪产假</option>
-										<option value="">丧假</option>
-									</select>
-								</div>
-								<div class="pane input-append date"><label for="">*开始时间：</label>
-									<input size="16" name="startTime" type="text" value="">
-                                    <span class="add-on"><i class="icon-calendar"></i></span>
-								</div>
-								<div class="pane input-append date"><label for="">*结束时间：</label>
-									<input size="16" name="startTime" type="text" value="">
-                                    <span class="add-on"><i class="icon-calendar"></i></span>
-								</div>
 								<div class="pane"><label for="">*紧急程度：</label>
 									<select name="" id="">
 										<option value="">请选择</option>
@@ -78,14 +57,45 @@
 										<option value="">紧急</option>
 									</select>
 								</div>
-								<div class="pane"><label for="">请假时间：</label><span>5小时</span></div>
 							</div>
 							<div class="apply-list">
-								<div class="pane"><label for="">可调休天数：</label><span>8</span></div>
+								<div class="form-list">
+									<div class="right-table">
+										<div class="page">
+											<table>
+												<thead>
+													<tr>
+														<th><em class="emcircle js-addLine">+</em></th>
+														<th>物品名称</th>
+														<th>单位</th>
+														<th>数量</th>
+														<th>备注</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><em class="emcircle js-removeLine">×</em></td>
+														<td><input placeholder="请填写物品名称" type="text" value="办公桌"></td>
+														<td><input placeholder="请填写单位" type="text" value="张"></td>
+														<td><input placeholder="请填写数量" type="text" value="10" ></td>
+														<td><input placeholder="请填写备注" type="text" value="完全坏了，需要换一个"></td>
+													</tr>
+													<tr>
+														<td><em class="emcircle js-removeLine">×</em></td>
+														<td><input placeholder="请填写物品名称" type="text" value="办公桌"></td>
+														<td><input placeholder="请填写单位" type="text" value="张"></td>
+														<td><input placeholder="请填写数量" type="text" value="10" ></td>
+														<td><input placeholder="请填写备注" type="text" value="需要修理一下"></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
 							</div>
 							<div class="apply-list">
-								<div class="pane"><label for="">申请理由：</label>
-									<textarea name="" id="" cols="30" rows="4"></textarea>
+								<div class="pane singlePane"><label for="">申请理由：</label>
+									<textarea name="" id="" cols="30" rows="4" placeholder="请填写申请理由"></textarea>
 								</div>
 							</div>
 							<div class="apply-list">
@@ -169,3 +179,14 @@
 	</div>
 	<!-- 物品报废申请单 end -->
 </div>
+
+<script>
+//	添加报废物品
+	$('.js-addLine').click(function () {
+		$(this).parents('table').children('tbody').append('<tr> <td><em class="emcircle js-removeLine">×</em></td> <td><input placeholder="请填写物品名称" type="text" value=""></td> <td><input placeholder="请填写单位" type="text" value=""></td> <td><input placeholder="请填写数量" type="text" value="" ></td> <td><input placeholder="请填写备注" type="text" value=""></td> </tr>');
+	})
+
+	$(document).on('click','.js-removeLine',function () {
+		$(this).parents('tr').remove();
+	})
+</script>

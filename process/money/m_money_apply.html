@@ -1,15 +1,15 @@
-<div data-id="outcarApply" name="menu0">
-	<!-- 出车申请单 -->
+<div data-id="moneyApply" name="menu0">
+	<!-- 用款申请单 -->
 	<div class="tree-container tree form-pane">
 		<div class="form-list form-userinfo" style="margin-left: 0;">
 			<div class="right-container">
 				<div class="applys">
 					<div class="apply-top clearfix">
-						<span class="h2-title">出车申请单</span><span class="h2-title">工单号：<em>QJ2017022200001</em></span>
+						<span class="h2-title">用款申请单</span><span class="h2-title">工单号：<em>QJ2017022200001</em></span>
 						<div class="fr">
 							<button type="button" class="btn btn-primary"> 提交 </button>
 							<button type="button" class="btn btn-default"> 保存 </button>
-							<button type="button" class="btn btn-default" data-id="outcarPreview" onclick="turnPage('process/outcar/m_outcar_preview.html',this)"> 预览 </button>
+							<button type="button" class="btn btn-default" data-id="moneyPreview" onclick="turnPage('process/money/m_money_preview.html',this)"> 预览 </button>
 							<button type="button" class="btn btn-default"> 删除 </button>
 							<button type="button" class="btn btn-default"> 结束 </button>
 						</div>
@@ -39,24 +39,36 @@
 							<div class="tips">
 								<p>年休假需提前三天申请，可分段使用，婚假、产假、陪产假、丧假不可分段使用 (含公休假)。</p>
 								<p>1、婚假：须提前一个月申请，提交结婚证明原件和复印件至人力资源管理中心；</p>
-								<p>2、产假/陪产假：产假须提前两个月申请，陪产假须提前五天申请，于假后上班三天内提交婴儿出生证原件和复印件至人力资源管理中心。详细说明请参考请假制度说明：<a href="javascript:void(0);"  data-id="outcarRemark" onclick="turnPage('process/outcar/m_outcar_remark.html',this)">出车申请制度说明</a></p>
+								<p>2、产假/陪产假：产假须提前两个月申请，陪产假须提前五天申请，于假后上班三天内提交婴儿出生证原件和复印件至人力资源管理中心。详细说明请参考请假制度说明：<a href="javascript:void(0);"  data-id="moneyRemark" onclick="turnPage('process/money/m_money_remark.html',this)">用款申请制度说明</a></p>
 							</div>
 						</div>
 						<div class="apply-creater">
 							<span class="h2-title">表单信息</span>
 							<div class="apply-list">
 								<div class="pane"><label for="">申请人：</label><span>小五子</span></div>
-								<div class="pane"><label for="">申请人部门：</label><span>产品中心</span></div>
+								<div class="pane"><label for="">申请部门：</label><span>产品中心</span></div>
 								<div class="pane"><label for="">工号：</label><span>A007</span></div>
 								<div class="pane"><label for="">岗位：</label><span>产品助理</span></div>
-								<div class="pane"><label for="">*用车类型：</label>
+								<div class="pane"><label for="">*申请类型：</label>
 									<select name="" id="">
 										<option value="">请选择</option>
-										<option value="">送货</option>
-										<option value="">接/送客户</option>
-										<option value="">出差</option>
-										<option value="">其他</option>
+										<option value="">事假</option>
+										<option value="">病假</option>
+										<option value="">调休</option>
+										<option value="">休假</option>
+										<option value="">婚假</option>
+										<option value="">产假</option>
+										<option value="">陪产假</option>
+										<option value="">丧假</option>
 									</select>
+								</div>
+								<div class="pane input-append date"><label for="">*开始时间：</label>
+									<input size="16" name="startTime" type="text" value="">
+                                    <span class="add-on"><i class="icon-calendar"></i></span>
+								</div>
+								<div class="pane input-append date"><label for="">*结束时间：</label>
+									<input size="16" name="startTime" type="text" value="">
+                                    <span class="add-on"><i class="icon-calendar"></i></span>
 								</div>
 								<div class="pane"><label for="">*紧急程度：</label>
 									<select name="" id="">
@@ -66,23 +78,13 @@
 										<option value="">紧急</option>
 									</select>
 								</div>
-								<div class="pane input-append date"><label for="">*预计用车日期：</label>
-									<input size="16" name="startTime" type="text" value="">
-                                    <span class="add-on"><i class="icon-calendar"></i></span>
-								</div>
-								<div class="pane">
-									<label for="">*是否需要司机：</label>
-									<label for="lab1" class="lab-radio"><input id="lab1" type="radio" name="needDriver" value="1"> 是</label>
-									<label for="lab2" class="lab-radio"><input id="lab2" type="radio" name="needDriver" value="0" checked> 否</label>
-								</div>
+								<div class="pane"><label for="">请假时间：</label><span>5小时</span></div>
 							</div>
 							<div class="apply-list">
-								<div class="pane singlePane"><label for="">预计行车路线：</label>
-								<textarea name="" id="" cols="30" rows="4" placeholder="请填写预计行车路线"></textarea>
-							</div>
+								<div class="pane"><label for="">可调休天数：</label><span>8</span></div>
 							</div>
 							<div class="apply-list">
-								<div class="pane singlePane"><label for="">申&ensp;请&ensp;理&ensp;由：</label>
+								<div class="pane singlePane"><label for="">申请理由：</label>
 									<textarea name="" id="" cols="30" rows="4" placeholder="请填写申请理由"></textarea>
 								</div>
 							</div>
@@ -165,5 +167,5 @@
 		<!-- 选择人员 end -->
 
 	</div>
-	<!-- 出车申请单 end -->
+	<!-- 用款申请单 end -->
 </div>

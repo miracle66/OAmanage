@@ -12,8 +12,10 @@
 .apply-top{
     line-height: 32px;
 }
-.apply-top > div > button{
+.apply-top > div .btn{
     margin: 0 0 0 10px;
+    width:70px;
+    height:38px;
 }
 .apply-top > span{
     margin-right: 50px;
@@ -56,9 +58,8 @@
 }
 .apply-creater{
     border-top: 1px solid #eee;
-    padding:30px 0;
+    padding:20px 0;
     line-height: 25px;
-    margin: 20px 0;
 }
 .apply-creater .formTitle{
     font-style: normal;
@@ -113,10 +114,7 @@
     margin: 0;
 }
 .apply-creater .form-list{
-    margin-left: 0;
-}
-.tree-container .apply-creater .form-list .right-table{
-    margin: 0;
+    margin:20px 0;
 }
 
 .apply-creater.editPane > textarea{
@@ -134,10 +132,19 @@ textarea{resize:none}
 
 .apply-list{
 }
+.apply-list .employee{
+    margin:0 0 20px 0;
+}
+.apply-list .employee > label{
+    display: inline-block;float: left;margin-top: 10px;
+}
+.apply-list .employee .selected-employee span{
+    margin: 0 !important;
+}
 .apply-list .pane{
     width: 395px;
     display: inline-block;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 .apply-list .pane textarea{
     vertical-align: top;
@@ -146,12 +153,25 @@ textarea{resize:none}
 .apply-list .pane > label{
     display: inline-block;
 }
+.apply-list .pane .lab-radio{
+    margin:0 10px;
+}
+.apply-list .pane .lab-radio > input{
+    margin-top: -2px;
+}
 .apply-list .pane.date input{
     vertical-align: inherit !important;
 }
 .apply-list .pane input[type="text"]{
     padding: 8px 10px;
     vertical-align: inherit;
+}
+
+.apply-list .pane.singlePane{
+    width: inherit;
+}
+.apply-list .pane.singlePane textarea{
+    width:980px;
 }
 
 .apply-list .wu-example{
@@ -209,7 +229,7 @@ textarea{resize:none}
 }
 
 
-/*办公用平 选择器*/
+/*办公用品 选择器*/
 .newModal .modal-body{
     padding:0;
     overflow: hidden;
@@ -254,4 +274,128 @@ textarea{resize:none}
     float: right;
     margin-top: 3px;
     cursor: pointer;
+}
+
+
+
+/*会议室 预定 start*/
+.meeting table{
+    width:100%;
+}
+.meeting table tr th[colspan='4'],.meeting table tr td:first-child{
+    padding:10px;
+}
+.meeting table tr td,.meeting table tr th{
+    border-bottom: 1px solid #e5e5e5;
+    cursor: pointer;
+    border-right: 1px solid #e5e5e5;
+    background: #f1f2f7;
+    padding:0 10px;
+    text-align: center;
+    font-weight: normal;
+}
+.meeting table tr td.active{
+    background: #ff7c34;
+}
+
+/*会议室预定查看*/
+#orderModal .tree-container{
+    border:none;
+}
+#orderModal .form-list{
+    margin-left: 0;
+}
+#orderModal .tree-container .form-list form .form-group{
+    margin:0;
+}
+#orderModal .tree-container .form-list form .form-group .uploader-list{
+    margin: 0;
+    padding: 0;
+    width: 350px;
+}
+
+.apply-container .explain{
+    text-align: right;
+}
+.apply-container .explain span{
+    width: 24px;
+    height: 46px;
+    display: inline-block;
+    margin: 0 0 0 20px;
+    font-size: 12px;
+    color: #fff;
+    word-wrap: break-word;
+    letter-spacing: 5px;
+    line-height: 15px;
+    padding: 2px 0;
+}
+.apply-container .explain .ordered{
+    background: #ff7c34;
+}
+.apply-container .explain .reserve{
+    background: #f1f2f7;
+    color: #666;
+}
+
+.roomMine .form-list{
+    margin-left: 0;
+}
+.roomMine .page{
+    margin-top: 40px;
+    display: block;
+}
+.roomMine .page .form-group {
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 15px;
+}
+.roomMine .page .form-group .company-select{
+    margin: 0 0 10px 15px;
+    min-width: inherit;
+}
+.roomMine .page .form-group .company-select .controls{
+    display: inline-block;
+}
+.roomMine .page .form-group .company-select .controls > input{
+    padding:8px 5px;
+    margin-bottom: 0;
+}
+.roomMine .page .form-group .company-select > button{
+    height:38px;
+}
+.roomMine .page .form-group .company-select .perfor-time .date input{
+    width:160px;
+}
+
+
+.roomMine .page table{
+    margin-top: 20px;
+}
+
+.roomMine .page .title{
+    text-align: right;
+    margin-top: 20px;
+}
+
+.modal-body.roomModal .form-list .form-group .controls > input,.modal-body.roomModal .form-list .form-group .controls > textarea{
+    width: 350px;
+}
+.roomMine .modal-body .tree-container{
+    border:none;
+}
+
+
+/*预算管理*/
+
+.budget .apply-container .apply-creater .apply-list .form-list .right-table{
+    margin: 0;
+    width: 1590px;
+    overflow: scroll;
+}
+.budget .apply-container .apply-creater .apply-list .form-list .right-table table th{
+    border: 1px solid #FFFFFF;
+}
+.budget .apply-container .apply-creater .apply-list .form-list .right-table table th,.budget .apply-container .apply-creater .apply-list .form-list .right-table table td{
+    font-weight: normal;
+    font-size: 12px;
+    padding: 20px;
 }

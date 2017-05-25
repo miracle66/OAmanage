@@ -388,7 +388,7 @@ textarea{resize:none}
 
 .budget .apply-container .apply-creater .apply-list .form-list .right-table{
     margin: 0;
-    width: 1590px;
+    width: 100%;
     overflow: scroll;
 }
 .budget .apply-container .apply-creater .apply-list .form-list .right-table table th{
